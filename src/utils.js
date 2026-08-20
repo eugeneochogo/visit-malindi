@@ -15,7 +15,7 @@ export function enquiryMessage(type, name, context = "") {
     nightlife: `${intro}\n\nWhat's happening in Malindi tonight?\n\nWe're interested in: ${name}\n\nPlease recommend some options.`,
     food: `${intro}\n\nI'd like a recommendation for ${name}.\n\nDate:\nNumber of people:\n\nPlease share the best current options and any useful details.`,
     attraction: `${intro}\n\nI'd like to visit ${name}.\n\nDate:\nNumber of people:\n\nPlease share the best way to include it in my trip.`,
-    event: `${intro}\n\nI'd like to know more about ${name}.\n\n${context || "Date:\nNumber of people:"}\n\nPlease share the latest event details and options.`,
+    event: `${intro}\n\nI'd like to know more about ${name}.\n\nPlease share the latest event details and options.`,
     itinerary: `${intro}\n\nI'd like help with the ${name} itinerary.\n\nPlease help me shape the best plan for my trip.`,
     general: `${intro}\n\nI'd like help planning my trip to Malindi.`,
   };

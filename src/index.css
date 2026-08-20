@@ -113,6 +113,12 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
 .listing-card h3:hover { color: var(--coral); }
 .listing-card p { display: -webkit-box; overflow: hidden; margin: 0 0 14px; color: var(--muted); font-size: 13px; line-height: 1.5; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .listing-card .event-card-details { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; color: var(--teal); font: 600 11px var(--display); -webkit-line-clamp: 1; }
+.listing-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.button-whatsapp-small { min-height: 36px; padding: 0 12px; font-size: 10px; }
+.button-whatsapp-small svg { flex: 0 0 auto; }
+.featured-listings { margin-bottom: 75px; padding-bottom: 70px; border-bottom: 1px solid var(--line); }
+.featured-listings-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 28px; }
+.featured-listings-heading h2 { margin: 0; font: 600 clamp(30px, 3vw, 42px)/1 var(--display); letter-spacing: -.07em; }
 .split-story { display: grid; grid-template-columns: minmax(0, 1.03fr) minmax(0, .97fr); align-items: center; gap: clamp(50px, 8vw, 130px); padding-top: 145px; padding-bottom: 145px; }
 .split-story-image { height: 585px; overflow: hidden; }
 .split-story-image img { width: 100%; height: 100%; object-fit: cover; }
@@ -390,6 +396,10 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
   .page-hero-actions { align-items: stretch; flex-direction: column; width: max-content; }
   .filter-row { overflow-x: auto; flex-wrap: nowrap; margin-right: -18px; padding-right: 18px; }
   .filter-chip { flex: 0 0 auto; }
+  .featured-listings { margin-bottom: 55px; padding-bottom: 55px; }
+  .featured-listings-heading { display: block; margin-bottom: 24px; }
+  .featured-listings-heading .result-count { display: block; margin-top: 10px; }
+  .listing-card-actions { align-items: flex-start; flex-direction: column; gap: 12px; }
   .trust-note { align-items: flex-start; margin-top: 25px; padding: 15px; }
   .trust-note p { font-size: 11px; }
   .detail-page { padding-top: 25px; }

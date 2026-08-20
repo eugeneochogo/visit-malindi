@@ -1,0 +1,140 @@
+Now proceed to the next phase of the Visit Malindi build.
+
+Do not redesign the existing homepage or change the Visit Malindi concept, branding, navigation or visual direction.
+
+We now need to turn the existing architecture into a scalable real content platform.
+
+1. Create a centralized content/data structure
+
+Create reusable structured data/models for:
+
+Places to Visit
+Excursions / Things to Do
+Places to Stay
+Eat & Drink
+Nightlife
+Transfers
+Itineraries
+What's On
+
+The data must be separate from the UI components so new listings can easily be added later without modifying page components.
+
+2. Create proper category pages
+
+Each main category should have:
+
+Page header
+Introductory description
+Featured listings
+Listing grid
+Search/filter capability where appropriate
+Individual listing links
+WhatsApp enquiry CTA
+3. Create reusable listing detail pages
+
+Build a common detail-page system that can display:
+
+Large image/gallery
+Name
+Location
+Category
+Description
+Highlights
+Things to know
+Useful information
+Map/location area where applicable
+WhatsApp enquiry button
+
+Use clean SEO-friendly URLs.
+
+4. Populate the destination/experience side with genuine Visit Malindi content
+
+Start with major attractions and experiences around:
+
+Malindi
+
+Malindi Marine National Park
+Vasco da Gama Pillar
+Malindi Museum
+Portuguese Chapel
+Malindi beaches
+Silversands
+Casuarina
+
+Watamu
+
+Watamu Marine National Park
+Mida Creek
+Gede Ruins
+Turtle-related experiences
+Watamu beaches
+
+Wider Coast
+
+Arabuko Sokoke Forest
+Sabaki River
+Mambrui
+Kilifi
+
+Do not invent prices, businesses, phone numbers, addresses, availability or specific claims. If commercial listing information is not available, structure the entry with appropriate fields ready for us to fill later.
+
+5. Keep commercial listings separate
+
+Do NOT invent hotels, restaurants, excursion companies or transfer companies.
+
+Build the system so we can later add real partners/listings individually.
+
+6. WhatsApp-first conversion
+
+Every relevant listing must have a prominent:
+
+Enquire on WhatsApp
+
+button.
+
+The WhatsApp number is:
+
++254791562000
+
+Generate contextual messages where appropriate. For example:
+
+"Hello Visit Malindi, I am interested in the Malindi Marine National Park experience. Please provide more information."
+
+For accommodation:
+
+"Hello Visit Malindi, I am interested in staying at [listing name]. Please assist me with availability and rates."
+
+For transfers:
+
+"Hello Visit Malindi, I need a transfer from [origin] to [destination]. Please assist."
+
+Do not implement payments, accounts, partner dashboards or booking APIs.
+
+7. Navigation
+
+Make sure the existing navigation correctly connects to the new category and detail pages.
+
+8. Mobile
+
+Everything must work properly on mobile, especially:
+
+Listing cards
+Filters
+Detail pages
+WhatsApp buttons
+Navigation
+9. Important
+
+Before changing anything, inspect the current implementation and MASTER-SPECIFICATION.md.
+
+Reuse the existing components and design system wherever possible.
+
+Do not introduce unrelated concepts.
+
+Do not turn Visit Malindi into a generic travel blog or source-verification website.
+
+The core product remains:
+
+Discover → Explore → Choose → Enquire → WhatsApp
+
+Build this phase completely, test the application, and report exactly what was changed when finished.
