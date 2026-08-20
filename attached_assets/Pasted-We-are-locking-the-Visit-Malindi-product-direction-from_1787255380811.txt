@@ -1,0 +1,126 @@
+We are locking the Visit Malindi product direction from this point forward.
+
+Do NOT reinterpret, redesign, rename, reposition, or simplify the core concept of Visit Malindi.
+
+Visit Malindi is a comprehensive destination discovery, travel-planning and local concierge platform for Malindi and the surrounding Kenyan Coast.
+
+The established product scope is:
+
+1. EXPLORE
+- Discover Malindi and Watamu
+- Beaches
+- Attractions
+- Excursions
+- Experiences
+- Things to do
+
+2. STAY
+- Hotels
+- Resorts
+- Villas
+- Apartments
+- Guesthouses
+- Other accommodation options
+
+3. EAT & DRINK
+- Restaurants
+- Cafes
+- Bars
+- Local food
+- Dining experiences
+
+4. NIGHTLIFE
+- Clubs
+- Lounges
+- Bars
+- Events
+- Entertainment
+
+5. TRANSFERS
+- Malindi Airport transfers
+- Malindi ↔ Watamu
+- Malindi ↔ Mombasa
+- Hotel/resort transfers
+- Local transfers
+- SGR transfers
+- SGR travel assistance
+
+6. PLACES TO VISIT
+- Malindi attractions
+- Watamu attractions
+- Marine experiences
+- Historical/cultural sites
+- Beaches
+- Nature and wildlife experiences
+
+7. ITINERARIES
+- Suggested Malindi itineraries
+- Day trips
+- Weekend plans
+- Family trips
+- Couples
+- Adventure
+- Relaxation
+
+8. WHAT'S ON
+- Events
+- Activities
+- Festivals
+- Current happenings
+
+9. VISITOR INFORMATION
+- How to get to Malindi
+- Getting around
+- Useful local information
+- Travel guidance
+
+10. WHATSAPP CONCIERGE
+WhatsApp is the primary enquiry and assistance channel.
+
+IMPORTANT:
+All WhatsApp enquiry buttons, CTA buttons, concierge buttons, transfer enquiry buttons, accommodation enquiry buttons, excursion enquiry buttons and other visitor enquiry links must use this WhatsApp number:
+
++254791562000
+
+Use the WhatsApp international format:
+254791562000
+
+WhatsApp links should open:
+https://wa.me/254791562000
+
+Where useful, pre-fill the WhatsApp message according to the visitor's enquiry, for example:
+"Hello Visit Malindi, I would like to enquire about accommodation."
+
+Do NOT implement payments at this stage.
+
+Do NOT implement partner login.
+
+Do NOT implement partner dashboards.
+
+Do NOT implement online booking accounts.
+
+Do NOT turn Visit Malindi into a generic directory.
+
+Do NOT make "verified listings" or "verified sources" the core identity, headline, hero message, navigation concept, or marketing proposition.
+
+Source/verification information may be used internally for accuracy, but it must remain secondary to the visitor experience.
+
+The brand must remain VISIT MALINDI.
+
+The website should feel like a premium destination platform and local travel concierge that helps someone discover Malindi, decide what to do, find somewhere to stay, arrange transport, build an itinerary and contact a real person through WhatsApp.
+
+Keep the existing visual direction, navigation and overall product architecture unless a change is specifically required by MASTER-SPECIFICATION.md.
+
+MASTER-SPECIFICATION.md remains the source of truth for the product.
+
+Do not create another mockup, sandbox, component preview architecture or one-page demo.
+
+Build the actual production-ready website.
+
+Before making major changes, read MASTER-SPECIFICATION.md completely and preserve its intended product vision.
+
+For this task, ONLY:
+1. Restore/maintain the correct Visit Malindi positioning.
+2. Update every WhatsApp enquiry destination to +254791562000.
+3. Verify that the WhatsApp CTAs actually open the correct number.
+4. Do not introduce unrelated redesigns or new product concepts.

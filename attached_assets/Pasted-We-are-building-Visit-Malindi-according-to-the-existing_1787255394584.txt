@@ -1,0 +1,46 @@
+We are building Visit Malindi according to the existing MASTER-SPECIFICATION.md in this repository.
+
+IMPORTANT: MASTER-SPECIFICATION.md is the source of truth for this project.
+
+Stop treating "verified sources" as the core concept of Visit Malindi. The previous task introduced too much emphasis on verified listings and changed the original product direction. Do not continue that direction.
+
+Re-align the application with the actual Visit Malindi concept:
+
+Visit Malindi is a complete destination discovery and visitor-concierge platform for Malindi and the surrounding Kenyan Coast.
+
+The core areas are:
+1. Things to do / excursions
+2. Places to visit
+3. Places to stay
+4. Restaurants and places to eat
+5. Nightlife and entertainment
+6. Airport transfers
+7. Malindi ↔ Watamu transfers
+8. Malindi ↔ Mombasa transfers
+9. SGR travel + transfers
+10. Other transport and local travel services
+11. Itineraries
+12. What's On / events
+13. WhatsApp concierge for enquiries
+
+The website should help a visitor discover what they need and then contact Visit Malindi through WhatsApp to enquire, get recommendations, confirm availability and arrange services.
+
+There are NO online payments, partner logins, partner dashboards, booking engines or automated supplier systems at this stage.
+
+WhatsApp is the primary conversion and enquiry mechanism.
+
+Update EVERY WhatsApp enquiry/action in the application to use this number:
++254791562000
+
+Use the existing MASTER-SPECIFICATION.md to determine the intended structure, pages, features, design system, navigation and content architecture.
+
+Do not invent a new product concept.
+Do not make "verified sources" the main selling point.
+Do not remove the major Visit Malindi categories.
+Do not add unnecessary authentication, payment or partner-management features.
+
+Before making major architectural changes, inspect MASTER-SPECIFICATION.md and the existing project structure and implement the next logical phase of the actual Visit Malindi product.
+
+Keep the existing strong visual design where appropriate, but make the content, navigation and functionality clearly represent the complete Visit Malindi platform.
+
+After implementation, test the application and report exactly what was changed.

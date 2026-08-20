@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "";
+export const WHATSAPP_NUMBER = "254791562000";
 export const isWhatsAppConfigured = Boolean(WHATSAPP_NUMBER);
 
 export function whatsappLink(message = "Hello Visit Malindi, I'd like some help planning my trip.") {

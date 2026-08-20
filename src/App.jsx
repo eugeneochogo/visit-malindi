@@ -261,7 +261,7 @@ function LegalPage({ title, children }) {
 }
 
 function TrustNote() {
-  return <div className="trust-note page-width"><Icon name="compass" size={19} /><p>These are editorial trip ideas, not provider listings. Information may change — please confirm availability, pricing and schedules with Visit Malindi before making arrangements.</p></div>;
+  return <div className="trust-note page-width"><Icon name="compass" size={19} /><p>Information may change — please confirm availability, pricing and schedules with Visit Malindi before making arrangements.</p></div>;
 }
 
 function EmptyState({ compact = false }) {

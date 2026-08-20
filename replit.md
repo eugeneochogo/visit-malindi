@@ -18,9 +18,9 @@ npm run build
 
 Vite writes the deployable static site to `dist/`, ready for a standard Vercel deployment.
 
-## WhatsApp configuration
+## WhatsApp concierge
 
-The website uses WhatsApp as its primary enquiry path. To direct links to the final concierge number, add a `VITE_WHATSAPP_NUMBER` environment variable containing the number in international digits only (for example, `254...`). Until then, the site opens WhatsApp with the relevant enquiry message ready to send.
+The website uses WhatsApp as its primary enquiry path. All contextual enquiry links target the Visit Malindi concierge at `+254 791 562 000` and include a relevant pre-filled message.
 
 ## Content
 
