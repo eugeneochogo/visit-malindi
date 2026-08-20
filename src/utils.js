@@ -9,7 +9,7 @@ export function whatsappLink(message = "Hello Visit Malindi, I'd like some help 
 export function enquiryMessage(type, name, context = "") {
   const intro = "Hello Visit Malindi 👋";
   const messages = {
-    experience: `${intro}\n\nI'm interested in ${name}.\n\nDate:\nNumber of people:\n\nPlease share availability and pricing.`,
+    experience: `${intro}\n\nI'm interested in ${name}.\n\nDate:\nNumber of people:\n\nPlease share current details and availability.`,
     excursion: `${intro}\n\nI'm interested in the ${name} excursion.\n\nDate:\nNumber of people:\n\nPlease share the current options and help me plan the day.`,
     stay: `${intro}\n\nI'm interested in ${name}.\n\nCheck-in:\nCheck-out:\nNumber of guests:\n\nPlease share availability and rates.`,
     transfer: `${intro}\n\nI'd like to arrange:\n${name}\n\nDate:\nNumber of passengers:\nPickup/arrival time:\n\nPlease share the available options and price.`,

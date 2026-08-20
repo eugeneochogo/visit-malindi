@@ -9,7 +9,13 @@ export default function DetailPage({ type, item, experiences, relatedItems, rela
   const messageName = item.route || item.name;
   const gallery = item.images?.length ? item.images : item.gallery?.length ? item.gallery : item.image ? [item.image] : [];
   const usefulInfo = item.usefulInfo || [];
-  const related = (relatedItems || experiences).filter((entry) => entry.id !== item.id).slice(0, 3);
+  const related = (relatedItems || experiences)
+    .filter((entry) => entry.id !== item.id)
+    .sort((first, second) => {
+      const score = (entry) => (entry.category === item.category ? 3 : 0) + (entry.location === item.location ? 2 : 0) + (entry.experienceTypes?.some((entryType) => item.experienceTypes?.includes(entryType)) ? 1 : 0);
+      return score(second) - score(first);
+    })
+    .slice(0, 3);
   const cardType = relatedType || type;
   const categoryPath = { experience: "/things-to-do", excursion: "/excursions", stay: "/places-to-stay", food: "/eat-and-drink", nightlife: "/nightlife", transfer: "/transfers", attraction: "/places-to-visit", itinerary: "/itineraries", event: "/whats-on" }[type] || "/things-to-do";
   const categoryLabel = { experience: "Things to do", excursion: "Excursions", stay: "Places to stay", food: "Eat & drink", nightlife: "Nightlife", transfer: "Transfers", attraction: "Places to visit", itinerary: "Itineraries", event: "What's on" }[type] || "Explore";
@@ -30,12 +36,17 @@ export default function DetailPage({ type, item, experiences, relatedItems, rela
 
       <div className="detail-body page-width">
         <div className="detail-main">
+            {item.fullDescription && <section className="detail-overview"><span className="eyebrow">Overview</span><h2>More to discover</h2><p>{item.fullDescription}</p></section>}
           <SectionHeading eyebrow="Good to know" title={type === "itinerary" ? "A starting point, not a script." : "Make it yours."} text={type === "itinerary" ? "Use this idea as a framework, then tell us what you want to add, skip or change." : "Every trip is different. We can help with the details that matter to you."} />
           {(item.highlights || item.amenities) && <div className="highlight-list">{(item.highlights || item.amenities).map((highlight) => <div key={highlight}><span className="highlight-dot" />{highlight}</div>)}</div>}
           {(item.duration || item.vehicle || item.priceFrom || item.venue || item.date || item.startTime) && <div className="detail-facts">{item.duration && <div><span className="eyebrow">Duration</span><strong>{item.duration}</strong></div>}{item.vehicle && <div><span className="eyebrow">Vehicle</span><strong>{item.vehicle}</strong></div>}{item.priceFrom && <div><span className="eyebrow">From</span><strong>{item.priceFrom}</strong></div>}{item.venue && <div><span className="eyebrow">Venue</span><strong>{item.venue}</strong></div>}{item.date && <div><span className="eyebrow">Date</span><strong>{item.date}</strong></div>}{item.startTime && <div><span className="eyebrow">Starts</span><strong>{item.startTime}</strong></div>}</div>}
+            {item.suitableFor?.length > 0 && <section className="detail-audience"><span className="eyebrow">Suitable for</span><h2>Who will enjoy it</h2><div>{item.suitableFor.map((audience) => <span key={audience}>{audience}</span>)}</div></section>}
+            {item.whatToExpect?.length > 0 && <section className="detail-expectations"><span className="eyebrow">What to expect</span><h2>Plan with confidence</h2><ul>{item.whatToExpect.map((expectation) => <li key={expectation}>{expectation}</li>)}</ul></section>}
           {item.days && <div className="itinerary-days">{item.days.map((day) => <div className="itinerary-day" key={day.day}><span className="day-number">0{day.day}</span><div><span className="eyebrow">Day {day.day}</span>{day.activities.map((activity) => <p key={activity}>{activity}</p>)}</div></div>)}</div>}
           <section className="detail-information"><span className="eyebrow">Useful information</span><h2>Before you make plans</h2>{usefulInfo.length ? <ul>{usefulInfo.map((info) => <li key={info}>{info}</li>)}</ul> : <p>Ask Visit Malindi for the latest information before arranging this.</p>}</section>
           {gallery.length > 1 && <section className="detail-gallery"><span className="eyebrow">Gallery</span><div>{gallery.map((image, index) => <SmartImage key={`${image}-${index}`} src={image} alt={`${messageName} view ${index + 1}`} />)}</div></section>}
+            {item.nearbyPlaces?.length > 0 && <section className="detail-discovery-links"><span className="eyebrow">Nearby places</span><h2>Keep exploring nearby</h2><div>{item.nearbyPlaces.map((place) => <a key={place.path} href={place.path} onClick={(event) => { event.preventDefault(); navigate(place.path); }}><span>{place.label}</span><Icon name="arrow" size={15} /></a>)}</div></section>}
+            {item.planningLinks?.length > 0 && <section className="detail-discovery-links detail-planning-links"><span className="eyebrow">Plan the rest of your trip</span><h2>Build out your coast day</h2><div>{item.planningLinks.map((link) => <a key={link.path} href={link.path} onClick={(event) => { event.preventDefault(); navigate(link.path); }}><span>{link.label}</span><Icon name="arrow" size={15} /></a>)}</div></section>}
           <section className="detail-location-panel"><div><span className="eyebrow">Location</span><h2>{item.location}</h2><p>Location details and directions can be confirmed with the Visit Malindi concierge.</p></div>{item.mapUrl && <a className="text-link" href={item.mapUrl} target="_blank" rel="noreferrer">View on map <Icon name="external" size={15} /></a>}</section>
           {(item.websiteUrl || item.socialUrl) && <div className="detail-links"><span className="eyebrow">More from this listing</span>{item.websiteUrl && <a href={item.websiteUrl} target="_blank" rel="noreferrer">Website <Icon name="external" size={14} /></a>}{item.socialUrl && <a href={item.socialUrl} target="_blank" rel="noreferrer">Social profile <Icon name="external" size={14} /></a>}</div>}
           <div className="detail-callout"><span className="eyebrow">Keep it flexible</span><p>Information may change. Confirm availability, pricing and schedules with Visit Malindi before making arrangements.</p></div>

@@ -62,7 +62,7 @@ const experienceEntries = [
     slug: "mida-creek-sunset",
     name: "Mida Creek",
     category: "Nature",
-    location: "Watamu",
+    location: "Mida Creek",
     duration: "Sunset",
     image: photos.midaCreek,
     description: "Slow down among mangroves and wide tidal horizons. Ask about current ways to experience Mida Creek from Watamu.",
@@ -74,7 +74,7 @@ const experienceEntries = [
     slug: "gede-ruins",
     name: "Gede Ruins",
     category: "History & Culture",
-    location: "Near Watamu",
+    location: "Gede",
     duration: "Half day",
     image: photos.ruins,
     description: "Walk through the atmospheric remains of a historic Swahili settlement surrounded by coastal forest.",
@@ -275,6 +275,84 @@ const experienceEntries = [
     tags: ["Fishing"],
     featured: false,
   },
+  {
+    id: "glass-bottom-boat",
+    slug: "glass-bottom-boat-experiences",
+    name: "Glass-bottom boat experiences",
+    category: "Boat Trips",
+    location: "Malindi & Watamu",
+    duration: "Ask for options",
+    image: photos.ocean,
+    description: "See more of the coast from the water with a route shaped around your interests. Ask about current options and conditions.",
+    highlights: ["Water-level views", "Marine setting", "Flexible group planning"],
+    tags: ["Marine", "Family"],
+    featured: false,
+  },
+  {
+    id: "coastal-boat-trips",
+    slug: "coastal-boat-trips",
+    name: "Coastal boat trips",
+    category: "Boat Trips",
+    location: "Malindi & Watamu",
+    duration: "Ask for options",
+    image: photos.dhow,
+    description: "A coast-day starting point for visitors who want to get out on the Indian Ocean and shape the route around their interests.",
+    highlights: ["Indian Ocean", "Flexible routes", "Malindi and Watamu options"],
+    tags: ["Marine", "Adventure"],
+    featured: false,
+  },
+  {
+    id: "coastal-fishing-trips",
+    slug: "coastal-fishing-trips",
+    name: "Coastal fishing trips",
+    category: "Fishing",
+    location: "Malindi & Watamu",
+    duration: "Ask for options",
+    image: photos.ocean,
+    description: "For visitors interested in a fishing-led coast day, with current options, conditions and group fit confirmed through the concierge.",
+    highlights: ["Time on the water", "Flexible enquiries", "Coast planning"],
+    tags: ["Marine", "Adventure"],
+    featured: false,
+  },
+  {
+    id: "nature-walks",
+    slug: "nature-walks-on-the-coast",
+    name: "Nature walks on the coast",
+    category: "Nature",
+    location: "Wider Coast",
+    duration: "Ask for options",
+    image: photos.mangrove,
+    description: "Step away from the shoreline for a slower nature-led experience around coastal forest, creek or river landscapes.",
+    highlights: ["Coastal landscapes", "Flexible pace", "Nature-led planning"],
+    tags: ["Nature", "Relaxation", "Photography"],
+    featured: false,
+  },
+  {
+    id: "bird-watching",
+    slug: "bird-watching-on-the-coast",
+    name: "Bird watching on the coast",
+    category: "Nature",
+    location: "Mida Creek",
+    duration: "Ask for options",
+    image: photos.midaCreek,
+    description: "Build a quiet coast day around the creek and wider natural environment, with current guidance on the best way to include bird watching.",
+    highlights: ["Mida Creek", "Nature observation", "Slow travel"],
+    tags: ["Nature", "Photography", "Relaxation"],
+    featured: false,
+  },
+  {
+    id: "coastal-culture-walks",
+    slug: "coastal-culture-walks",
+    name: "Coastal culture walks",
+    category: "History & Culture",
+    location: "Malindi",
+    duration: "Flexible",
+    image: photos.ruins,
+    description: "Link Malindi's old-town atmosphere, waterfront landmarks and coastal history in a slower, context-led day.",
+    highlights: ["Malindi history", "Coastal culture", "Flexible route"],
+    tags: ["Culture", "Photography", "Family"],
+    featured: false,
+  },
 ];
 
 const excursionEntries = [
@@ -296,7 +374,7 @@ const excursionEntries = [
     name: "Watamu and Mida Creek",
     category: "Nature",
     location: "Watamu",
-    duration: "Day trip",
+    duration: "Day Trip",
     image: photos.midaCreek,
     description: "Combine Watamu's coast with time around Mida Creek. Ask about current travel options and timing.",
     highlights: ["Watamu", "Mida Creek", "Nature-led day"],
@@ -308,7 +386,7 @@ const excursionEntries = [
     name: "Gede and Arabuko Sokoke",
     category: "Culture & Nature",
     location: "Gede",
-    duration: "Day trip",
+    duration: "Day Trip",
     image: photos.ruins,
     description: "A culture-and-nature route pairing Gede's historic setting with the surrounding coastal forest region.",
     highlights: ["Gede", "History", "Coastal forest"],
@@ -320,7 +398,7 @@ const excursionEntries = [
     name: "Mambrui excursion",
     category: "Culture",
     location: "Mambrui",
-    duration: "Day trip",
+    duration: "Day Trip",
     image: photos.beach,
     description: "A wider-coast outing for travellers who want to explore beyond Malindi at an unhurried pace.",
     highlights: ["Mambrui", "Wider Coast", "Flexible route"],
@@ -332,7 +410,7 @@ const excursionEntries = [
     name: "Kilifi excursion",
     category: "Day Trip",
     location: "Kilifi",
-    duration: "Day trip",
+    duration: "Day Trip",
     image: photos.ocean,
     description: "Consider Kilifi as a wider-coast day trip when shaping a route between the region's coastal destinations.",
     highlights: ["Kilifi", "Wider Coast", "Route planning"],
@@ -344,7 +422,7 @@ const excursionEntries = [
     name: "Marafa / Hell's Kitchen",
     category: "Adventure",
     location: "Marafa",
-    duration: "Day trip",
+    duration: "Day Trip",
     image: photos.ruins,
     description: "A change of scenery inland from the coast. Ask Visit Malindi about current travel options and how to plan the day.",
     highlights: ["Marafa", "Landscape", "Inland day trip"],
@@ -356,7 +434,7 @@ const excursionEntries = [
     name: "Mombasa day trip",
     category: "Day Trip",
     location: "Mombasa",
-    duration: "Day trip",
+    duration: "Day Trip",
     image: photos.dhow,
     description: "Build a Mombasa day into a wider coast itinerary with local help on timing and transport.",
     highlights: ["Mombasa", "Wider Coast", "Flexible itinerary"],
@@ -489,6 +567,81 @@ const itineraryEntries = [
   { id: "relaxation-trip", slug: "relaxation-trip", name: "Relaxation Trip", duration: "Flexible", audience: "Slow travellers", image: photos.beach, description: "For travellers who would rather leave the schedule open and let the coast set the pace.", days: [{ day: 1, activities: ["Arrive and exhale", "A quiet meal"] }, { day: 2, activities: ["Beach time", "Sunset"] }] },
 ];
 
+const experienceTypesByCategory = {
+  "Marine": ["Marine"],
+  "Snorkelling": ["Marine"],
+  "Diving": ["Marine", "Adventure"],
+  "Dolphin Experiences": ["Marine", "Nature"],
+  "Sunset Cruises": ["Marine", "Couples", "Relaxation"],
+  "Sandbank": ["Marine", "Family", "Couples"],
+  "Water Sports": ["Marine", "Adventure"],
+  "Beach Activities": ["Family", "Relaxation"],
+  "Boat Trips": ["Marine", "Adventure"],
+  "Fishing": ["Marine", "Adventure"],
+  "Nature": ["Nature"],
+  "Wildlife": ["Nature"],
+  "History & Culture": ["Culture"],
+  "Adventure": ["Adventure"],
+  "Family Activities": ["Family"],
+  "Couples & Romantic": ["Couples", "Relaxation"],
+  "Photography": ["Photography"],
+  "Wellness": ["Relaxation"],
+  "Day Trip": ["Day Trip"],
+  "Culture": ["Culture", "Day Trip"],
+  "Culture & Nature": ["Culture", "Nature", "Day Trip"],
+};
+
+const experienceProfiles = {
+  "malindi-marine-national-park": { fullDescription: "Malindi Marine National Park is a useful starting point for a water-led day on the coast. Visit Malindi can help match your group with an appropriate current way to spend time on the water, while keeping conditions and responsible practice front of mind.", suitableFor: ["First-time visitors", "Families", "Marine enthusiasts"], nearbyPlaces: [{ label: "Malindi beaches", path: "/attraction/malindi-beaches" }, { label: "Vasco da Gama Pillar", path: "/attraction/vasco-da-gama-pillar" }] },
+  "watamu-marine-national-park": { fullDescription: "Watamu Marine National Park is part of a coast day that can be as active or as relaxed as you want it to be. Use the concierge to confirm current options, practical details and a route that works with the rest of your time in Watamu.", suitableFor: ["Couples", "Families", "Marine enthusiasts"], nearbyPlaces: [{ label: "Watamu beaches", path: "/attraction/watamu-beaches" }, { label: "Mida Creek", path: "/attraction/mida-creek" }] },
+  "mida-creek-sunset": { fullDescription: "Mida Creek offers a slower contrast to an ocean-facing day, with mangrove waterways and wide tidal horizons near Watamu. The right way to experience it can depend on conditions, timing and what you want to pair it with.", suitableFor: ["Couples", "Nature lovers", "Photographers"], nearbyPlaces: [{ label: "Watamu beaches", path: "/attraction/watamu-beaches" }, { label: "Gede Ruins", path: "/attraction/gede-ruins" }] },
+  "gede-ruins": { fullDescription: "Gede Ruins brings historic Swahili settlement remains and a coastal-forest setting into the same visit. It works well for travellers who want their beach trip to include history, culture and a change of pace.", suitableFor: ["History lovers", "Families", "Curious explorers"], nearbyPlaces: [{ label: "Arabuko Sokoke Forest", path: "/attraction/arabuko-sokoke-forest" }, { label: "Mida Creek", path: "/attraction/mida-creek" }] },
+  "dhow-sailing": { fullDescription: "Dhow sailing is an unhurried way to see the coastline from the water. The concierge can help you ask about the current options, timing and whether a daytime or sunset-led route suits your group.", suitableFor: ["Couples", "Friends", "First-time visitors"], nearbyPlaces: [{ label: "Malindi beaches", path: "/attraction/malindi-beaches" }, { label: "Watamu beaches", path: "/attraction/watamu-beaches" }] },
+  "glass-bottom-boat": { fullDescription: "A glass-bottom boat experience is a gentle option for travellers who want a water-based coast day without needing to build the whole plan around an active experience. Ask Visit Malindi about current routes and the best fit for your group.", suitableFor: ["Families", "First-time visitors", "Mixed-age groups"], nearbyPlaces: [{ label: "Malindi Marine National Park", path: "/attraction/malindi-marine-national-park" }, { label: "Watamu Marine National Park", path: "/attraction/watamu-marine-national-park" }] },
+  "gede-arabuko-excursion": { fullDescription: "This wider-coast excursion combines Gede's heritage setting with the surrounding coastal forest region. It is a strong choice when you want to step beyond the beach and add both history and nature to one day.", suitableFor: ["Nature lovers", "History lovers", "Photographers"], nearbyPlaces: [{ label: "Gede Ruins", path: "/attraction/gede-ruins" }, { label: "Arabuko Sokoke Forest", path: "/attraction/arabuko-sokoke-forest" }] },
+  "marafa-excursion": { fullDescription: "Marafa / Hell's Kitchen offers a distinct inland landscape as part of a wider Coast itinerary. Travel planning, route conditions and the right timing should be confirmed with the concierge before arranging the day.", suitableFor: ["Adventure seekers", "Photographers", "Wider-coast explorers"], nearbyPlaces: [{ label: "Marafa / Hell's Kitchen", path: "/attraction/marafa-hells-kitchen" }, { label: "Mambrui", path: "/attraction/mambrui" }] },
+};
+
+const popularExperienceIds = new Set(["malindi-marine-national-park", "watamu-marine-national-park", "mida-creek-sunset", "gede-ruins", "dhow-sailing", "glass-bottom-boat", "watamu-mida-creek-excursion", "gede-arabuko-excursion"]);
+
+function defaultNearbyPlaces(location = "") {
+  if (location.includes("Watamu") || location.includes("Mida")) return [{ label: "Watamu beaches", path: "/attraction/watamu-beaches" }, { label: "Mida Creek", path: "/attraction/mida-creek" }];
+  if (location.includes("Gede")) return [{ label: "Gede Ruins", path: "/attraction/gede-ruins" }, { label: "Arabuko Sokoke Forest", path: "/attraction/arabuko-sokoke-forest" }];
+  if (location.includes("Malindi")) return [{ label: "Malindi beaches", path: "/attraction/malindi-beaches" }, { label: "Malindi Old Town", path: "/attraction/malindi-old-town" }];
+  return [{ label: "Places to visit", path: "/places-to-visit" }, { label: "Excursions from Malindi", path: "/excursions" }];
+}
+
+function destinationPlanningLink(location = "") {
+  if (location.includes("Malindi")) return { label: "Discover Malindi", path: "/malindi" };
+  if (location.includes("Watamu") || location.includes("Mida") || location.includes("Gede")) return { label: "Discover Watamu", path: "/watamu" };
+  return null;
+}
+
+function enrichDiscoveryItem(item) {
+  const profile = experienceProfiles[item.id] || {};
+  const experienceTypes = item.experienceTypes || experienceTypesByCategory[item.category] || ["Day Trip"];
+  const destinationLink = destinationPlanningLink(item.location);
+  return {
+    ...item,
+    experienceTypes: [...new Set([...experienceTypes, ...(item.tags || []).filter((tag) => ["Adventure", "Family", "Couples", "Nature", "Culture", "Marine", "Food", "Relaxation", "Photography", "Day Trip"].includes(tag))])],
+    popular: popularExperienceIds.has(item.id),
+    fullDescription: profile.fullDescription || `${item.description} This is a concierge-led experience guide rather than an operator listing, so Visit Malindi can help you confirm current practical details before you make arrangements.`,
+    suitableFor: profile.suitableFor || (experienceTypes.includes("Family") ? ["Families", "Friends", "First-time visitors"] : experienceTypes.includes("Couples") ? ["Couples", "Slow travellers", "First-time visitors"] : ["Curious travellers", "Friends", "Independent explorers"]),
+    whatToExpect: item.whatToExpect || ["A day shaped around your interests and the current conditions", "Practical details confirmed with the Visit Malindi concierge", "A flexible starting point rather than a fixed commercial package"],
+    nearbyPlaces: profile.nearbyPlaces || defaultNearbyPlaces(item.location),
+    planningLinks: [
+      destinationLink,
+      { label: "Places to visit", path: "/places-to-visit" },
+      { label: "Places to stay", path: "/places-to-stay" },
+      { label: "Eat & drink", path: "/eat-and-drink" },
+      { label: "Nightlife", path: "/nightlife" },
+      { label: "Transfers", path: "/transfers" },
+      { label: "Itineraries", path: "/itineraries" },
+      { label: "What's on", path: "/whats-on" },
+    ].filter(Boolean),
+  };
+}
+
 const withListingFields = (item) => ({
   ...item,
   images: item.images || item.gallery || (item.image ? [item.image] : []),
@@ -499,8 +652,8 @@ const withListingFields = (item) => ({
   socialUrl: item.socialUrl || null,
 });
 
-export const experiences = experienceEntries.map(withListingFields);
-export const excursions = excursionEntries.map(withListingFields);
+export const experiences = experienceEntries.map(enrichDiscoveryItem).map(withListingFields);
+export const excursions = excursionEntries.map(enrichDiscoveryItem).map(withListingFields);
 export const stays = stayEntries.map(withListingFields);
 export const foodGuides = foodEntries.map(withListingFields);
 export const nightlife = nightlifeEntries.map(withListingFields);
