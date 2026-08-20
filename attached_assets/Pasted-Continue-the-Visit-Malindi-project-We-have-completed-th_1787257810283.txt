@@ -1,0 +1,170 @@
+Continue the Visit Malindi project.
+
+We have completed the Malindi and Watamu destination pages.
+
+Now build the COMPLETE "THINGS TO DO & EXCURSIONS" experience.
+
+Do not redesign the website.
+Do not change the Visit Malindi brand, positioning, navigation or visual direction.
+Follow MASTER-SPECIFICATION.md.
+
+Create a strong discovery experience for visitors looking for activities and excursions around Malindi, Watamu and the wider Coast.
+
+MAIN CATEGORIES:
+
+1. Marine & Ocean
+- Malindi Marine National Park
+- Watamu Marine National Park
+- Snorkelling
+- Diving
+- Boat trips
+- Glass-bottom boat experiences
+- Dolphin experiences
+- Deep-sea fishing
+- Sunset cruises
+- Sandbank trips
+- Fishing trips
+- Water sports
+
+2. Beaches
+- Malindi beaches
+- Silversands
+- Casuarina
+- Watamu beaches
+- Other notable beaches
+
+3. Nature & Wildlife
+- Arabuko Sokoke Forest
+- Sabaki River
+- Mida Creek
+- Nature walks
+- Wildlife experiences
+- Bird watching
+
+4. Culture & History
+- Vasco da Gama Pillar
+- Portuguese Chapel
+- Malindi Museum
+- Gede Ruins
+- Local cultural experiences
+- Historical sites
+
+5. Adventure & Day Trips
+- Marafa / Hell's Kitchen
+- Mambrui
+- Kilifi
+- Mombasa
+- Tsavo
+- Other suitable day trips
+
+6. Family
+Create a family-friendly discovery category.
+
+7. Couples
+Create romantic experiences and suggestions.
+
+8. Photography
+Create a photography-focused category featuring scenic and cultural experiences.
+
+9. Relaxation & Wellness
+Create a category for beach relaxation, wellness and similar experiences where appropriate.
+
+Each experience should use the existing reusable listing/detail-page system.
+
+DETAIL PAGE REQUIREMENTS:
+
+Every experience detail page should support:
+
+- Hero image
+- Experience name
+- Location
+- Short description
+- Full description
+- Highlights
+- Suitable for
+- Approximate duration when genuinely known
+- What visitors can expect
+- Related experiences
+- Nearby places
+- Suggested accommodation
+- Suggested itinerary
+- WhatsApp enquiry CTA
+
+Do not invent prices, reviews, operating hours, phone numbers or commercial businesses.
+
+For experiences that normally require an operator, structure the page so we can later attach a real provider.
+
+WHATSAPP:
+
+Every experience must have a prominent:
+
+"Enquire on WhatsApp"
+
+button.
+
+Use:
+
++254791562000
+
+URL:
+https://wa.me/254791562000
+
+Generate contextual messages, for example:
+
+"Hello Visit Malindi, I am interested in the Malindi Marine National Park experience. Please assist me with details and availability."
+
+DISCOVERY:
+
+Create:
+
+- Category filters
+- Location filters
+- Experience-type filters
+- Search
+- Featured experiences
+- Popular experiences
+- Related experiences
+
+Keep filtering fast and simple.
+
+Locations should include:
+- Malindi
+- Watamu
+- Gede
+- Mida Creek
+- Mambrui
+- Kilifi
+- Mombasa
+- Wider Coast
+
+Experience types:
+- Adventure
+- Family
+- Couples
+- Nature
+- Culture
+- Marine
+- Food
+- Relaxation
+- Photography
+- Day Trip
+
+SEO:
+
+Give each major experience a clean URL, page title, meta description, H1 and internal links.
+
+IMPORTANT:
+
+Do not turn the site into a generic directory.
+
+The experience pages should inspire visitors and help them plan what to do.
+
+The journey should remain:
+
+DISCOVER → EXPLORE → CHOOSE → ENQUIRE → WHATSAPP
+
+Use the existing design system.
+
+Do not make unrelated changes elsewhere in the website.
+
+Test the new pages, filters, navigation and WhatsApp links before finishing.
