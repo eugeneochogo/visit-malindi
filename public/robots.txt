@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://visitmalindi.co.ke/sitemap.xml
