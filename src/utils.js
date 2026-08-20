@@ -19,6 +19,7 @@ export function enquiryMessage(type, name, context = "") {
     event: `${intro}\n\nI'd like to know more about ${name}.\n\nPlease share the latest event details and options.`,
     itinerary: `${intro}\n\nI'd like help with the ${name} itinerary.\n\nPlease help me shape the best plan for my trip.`,
     general: `${intro}\n\nI'd like help planning my trip to Malindi.`,
+    destination: `${intro}\n\nI would like help planning my trip to ${name}.`,
   };
   return `${messages[type] || messages.general}${context ? `\n\n${context}` : ""}`;
 }

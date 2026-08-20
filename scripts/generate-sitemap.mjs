@@ -4,6 +4,8 @@ import { writeFile } from "node:fs/promises";
 const origin = "https://visitmalindi.co.ke";
 const publicRoutes = [
   "/",
+  "/malindi",
+  "/watamu",
   "/things-to-do",
   "/things-to-do-in-malindi",
   "/things-to-do-in-watamu",

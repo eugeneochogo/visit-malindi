@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   attractions,
+  destinations,
   events,
   excursions,
   exploreCategories,
@@ -18,6 +19,7 @@ import {
 import { enquiryMessage, isWhatsAppConfigured, navigate, slugFromPath, whatsappLink } from "./utils";
 import ListingCard from "./components/ListingCard";
 import ReusableDetailPage from "./components/DetailPage";
+import DestinationPage from "./components/DestinationPage";
 
 const catalogueByRoute = {
   "/things-to-do": { title: "Things to do in Malindi", eyebrow: "Explore", intro: "From the Indian Ocean to coastal forest, find an experience that feels like your kind of day.", data: experiences, type: "experience", filters: ["All", "Marine", "Boat Trips", "Snorkelling", "Diving", "Dolphin Experiences", "Fishing", "Sunset Cruises", "Sandbank", "Water Sports", "Beach Activities", "Nature", "Wildlife", "History & Culture", "Adventure", "Family Activities", "Couples & Romantic", "Photography", "Wellness"], locations: ["All", "Malindi", "Watamu", "Wider Coast"] },
@@ -297,6 +299,8 @@ function App() {
   else if (pathname === "/search") content = <SearchPage />;
   else if (pathname === "/about") content = <AboutPage />;
   else if (pathname === "/contact") content = <ContactPage />;
+  else if (pathname === "/malindi") content = <DestinationPage destination={destinations.malindi} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} />;
+  else if (pathname === "/watamu") content = <DestinationPage destination={destinations.watamu} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} />;
   else if (pathname === "/whats-on" || pathname === "/malindi-events") content = <EventsPage />;
   else if (pathname === "/privacy") content = <LegalPage title="Privacy Policy"><p>Visit Malindi respects your privacy. This starter policy explains the basics of how this website is intended to work and should be reviewed before launch.</p><h2>Information you share</h2><p>When you choose to contact Visit Malindi through WhatsApp or email, the information you choose to include is sent to that service so we can respond to your enquiry.</p><h2>Website usage</h2><p>This V1 website is a static discovery experience. Any future analytics or contact systems should be added with clear notice and appropriate consent.</p></LegalPage>;
   else if (pathname === "/terms") content = <LegalPage title="Terms of Use"><p>Visit Malindi is a discovery and enquiry platform, not a booking or payment platform. Information on the website is intended to help you plan and should be confirmed before you make arrangements.</p><h2>Accuracy</h2><p>We aim to keep information useful and transparent. Availability, pricing, schedules and event details can change.</p><h2>External services</h2><p>WhatsApp, email and any linked third-party services have their own terms and policies.</p></LegalPage>;

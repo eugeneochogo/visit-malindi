@@ -546,6 +546,8 @@ export const searchIndex = [
 
 export const pageMeta = {
   "/": ["Visit Malindi — Discover the Coast Your Way.", "Your local guide to where to stay, what to do, where to eat and how to experience Malindi and the Kenyan Coast."],
+  "/malindi": ["Malindi Travel Guide | Visit Malindi", "Plan a Malindi trip with a local guide to beaches, marine experiences, history, food, nightlife, transfers and itineraries."],
+  "/watamu": ["Watamu Travel Guide | Visit Malindi", "Plan a Watamu trip with a local guide to beaches, marine experiences, Mida Creek, Gede Ruins, food, family days and transfers."],
   "/things-to-do": ["Things to Do in Malindi | Visit Malindi", "Explore marine, nature, culture and adventure experiences in Malindi and Watamu."],
   "/excursions": ["Excursions from Malindi | Visit Malindi", "Explore day trips and wider coast excursions from Malindi, Watamu and the Kenyan Coast."],
   "/places-to-stay": ["Places to Stay in Malindi | Visit Malindi", "Find the right base for your Malindi or Watamu trip, from beachfront stays to family-friendly options."],
@@ -555,6 +557,204 @@ export const pageMeta = {
   "/places-to-visit": ["Places to Visit in Malindi | Visit Malindi", "Beaches, history, nature and culture across Malindi, Watamu and the Kenyan Coast."],
   "/itineraries": ["Malindi Itineraries | Visit Malindi", "Ready-made ideas for one day, three days, a weekend, a family holiday or a honeymoon."],
   "/whats-on": ["What's On in Malindi | Visit Malindi", "Find out what is happening in Malindi tonight and this weekend."],
+};
+
+const sharedDestinationNav = [
+  { label: "Things to do", path: "/things-to-do" },
+  { label: "Excursions", path: "/excursions" },
+  { label: "Places to visit", path: "/places-to-visit" },
+  { label: "Stay", path: "/places-to-stay" },
+  { label: "Eat & drink", path: "/eat-and-drink" },
+  { label: "Nightlife", path: "/nightlife" },
+  { label: "Transfers", path: "/transfers" },
+  { label: "Itineraries", path: "/itineraries" },
+  { label: "What's on", path: "/whats-on" },
+];
+
+export const destinations = {
+  malindi: {
+    name: "Malindi",
+    slug: "malindi",
+    mark: "ML",
+    eyebrow: "Destination guide · Kenya's coast",
+    title: "Malindi, your way.",
+    intro: "A warm-water coast town with marine experiences, layered Swahili and Portuguese history, easy beach days and a local rhythm that rewards taking your time.",
+    image: photos.hero,
+    imageAlt: "Indian Ocean shoreline along the Kenyan Coast",
+    navLinks: sharedDestinationNav,
+    whyVisit: {
+      title: "Come for the ocean. Stay for the layers.",
+      text: "Malindi brings together a waterfront, marine experiences, beaches, old-town history and access to the wider coast. It works for a slow weekend, a family base, a couple's escape or a longer trip built around the sea."
+    },
+    focusText: "Use this guide to move from the big picture to the details that shape a good day: what to do, where to go, how to move between places and what to ask before you make arrangements.",
+    focusCards: [
+      { title: "What to do", text: "Marine, beach, nature, culture and easy coast days.", path: "/things-to-do-in-malindi" },
+      { title: "Places to visit", text: "Waterfront landmarks, beaches and history close to town.", path: "/places-to-visit" },
+      { title: "Plan an escape", text: "A day, a weekend or a Malindi + Watamu route.", path: "/itineraries" },
+      { title: "Ask a local", text: "Get help choosing the right pace for your trip.", path: "/contact" },
+    ],
+    sections: [
+      { id: "what-to-do", eyebrow: "Start here", title: "What to do in Malindi", text: "Build the day around the Indian Ocean, then add the kind of detail that makes the trip feel like yours.", links: [
+        { title: "Things to do in Malindi", text: "Browse marine, beach, nature, family and culture-led ideas.", path: "/things-to-do-in-malindi" },
+        { title: "Marine experiences", text: "Snorkelling, diving, dhow sailing and time on the water.", path: "/experience/malindi-marine-national-park" },
+        { title: "Malindi itineraries", text: "Use a day, three days or a weekend as a starting point.", path: "/itineraries" },
+      ] },
+      { id: "places", eyebrow: "See the place", title: "Places to visit", text: "Malindi is easy to explore in pieces: a waterfront landmark, a historic stop, a beach and a little time away from the centre.", links: [
+        { title: "Places to Visit", text: "Browse the wider catalogue of beaches, history and nature.", path: "/places-to-visit" },
+        { title: "Vasco da Gama Pillar", text: "A waterfront landmark to include in a slower town walk.", path: "/attraction/vasco-da-gama-pillar" },
+        { title: "Malindi Old Town", text: "Take in layers of coastal history, culture and everyday life.", path: "/attraction/malindi-old-town" },
+        { title: "Malindi Museum", text: "Add context to the town's coastal history.", path: "/attraction/malindi-museum" },
+      ] },
+      { id: "beaches", eyebrow: "By the water", title: "Beaches in Malindi", text: "Choose between a simple beach day, a quieter shoreline or a base for marine activities. Confirm current conditions and access locally.", links: [
+        { title: "Malindi beaches", text: "Start with the coast closest to the town's rhythm.", path: "/attraction/malindi-beaches" },
+        { title: "Silversands", text: "A quieter setting for a beach-led day.", path: "/attraction/silversands" },
+        { title: "Casuarina", text: "Explore the Casuarina side at your own pace.", path: "/attraction/casuarina" },
+        { title: "Beach activities", text: "Find ideas for making the shoreline part of the day.", path: "/experience/beach-activities" },
+      ] },
+      { id: "marine", eyebrow: "Indian Ocean", title: "Marine experiences", text: "The water is central to Malindi. Ask about current conditions, responsible practice, timing and the best fit for your group.", links: [
+        { title: "Malindi Marine National Park", text: "A starting point for marine time from Malindi.", path: "/experience/malindi-marine-national-park" },
+        { title: "Snorkelling on the coast", text: "A simple way to spend time in the water.", path: "/experience/snorkelling-on-the-coast" },
+        { title: "Diving on the coast", text: "Ask about current diving possibilities.", path: "/experience/diving-on-the-coast" },
+        { title: "Dhow sailing", text: "See the coastline from a traditional dhow.", path: "/experience/dhow-sailing" },
+      ] },
+      { id: "food", eyebrow: "Taste the coast", title: "Food and dining", text: "Plan around seafood, Swahili flavours, café mornings, beach dining or a more considered evening. The guide stays at category level so the concierge can confirm what is current.", links: [
+        { title: "Eat & Drink", text: "Browse the wider guide to restaurants, cafés, seafood and bars.", path: "/eat-and-drink" },
+        { title: "Restaurants in Malindi", text: "Start with a local food and dining enquiry.", path: "/restaurants-in-malindi" },
+        { title: "Ask for a food plan", text: "Share your mood, budget and location with the concierge.", path: "/contact" },
+      ] },
+      { id: "nightlife", eyebrow: "After dark", title: "Nightlife in Malindi", text: "Evenings can mean a beach lounge, live music, a DJ or simply dinner by the water. What is happening changes, so ask close to the time.", links: [
+        { title: "Nightlife in Malindi", text: "Browse the nightlife guide and category-level options.", path: "/malindi-nightlife" },
+        { title: "What's On", text: "Ask what is happening tonight or this weekend.", path: "/whats-on" },
+      ] },
+      { id: "family", eyebrow: "For all ages", title: "Family activities", text: "Keep the schedule flexible: easy beach time, short marine experiences, nature and food stops can all fit without making the day feel rushed.", links: [
+        { title: "Family activities", text: "Find family-friendly coast ideas.", path: "/experience/family-coast-day" },
+        { title: "Family holiday itinerary", text: "A flexible starting point for a family trip.", path: "/itinerary/family-holiday" },
+        { title: "Plan around your group", text: "Ask the concierge about timing and current options.", path: "/plan-my-trip" },
+      ] },
+      { id: "couples", eyebrow: "For two", title: "Couples and romantic experiences", text: "Give the trip room for a sunset, a slow meal, an ocean experience or a day with no fixed agenda.", links: [
+        { title: "Couples experiences", text: "Browse romantic and unhurried coast ideas.", path: "/experience/couples-coast-day" },
+        { title: "Honeymoon by the Coast", text: "A flexible itinerary for a special trip.", path: "/itinerary/honeymoon" },
+        { title: "Couple's getaway", text: "Balance beach time, food and adventure.", path: "/itinerary/couples-getaway" },
+      ] },
+      { id: "nature-culture", eyebrow: "Beyond the beach", title: "Nature, culture and history", text: "Malindi's character comes from the meeting of coast, history and living culture. Take a slower route through town, then look outward to the river, forest and nearby heritage sites.", links: [
+        { title: "Portuguese Chapel", text: "A historic place to include in an old-town walk.", path: "/attraction/portuguese-chapel" },
+        { title: "Sabaki River", text: "A wider-coast nature destination to consider.", path: "/attraction/sabaki-river" },
+        { title: "Gede and Arabuko Sokoke", text: "Combine heritage and coastal forest in one excursion.", path: "/excursion/gede-and-arabuko-sokoke" },
+        { title: "Wildlife on the coast", text: "Add a nature-led idea to your plans.", path: "/experience/wildlife-on-the-coast" },
+      ] },
+    ],
+    practicalIntro: "Whether you arrive by air, train or road, the easiest next step is to share your arrival details and destination with the concierge so the current options can be confirmed.",
+    practical: [
+      { title: "Getting around", text: "Ask about private coastal transfers and moving between Malindi, Watamu and nearby destinations.", path: "/transfers" },
+      { title: "Malindi Airport", text: "Arrange the airport-to-hotel leg around your arrival time.", path: "/transfer/malindi-airport-to-hotel" },
+      { title: "Mombasa Airport", text: "Plan the road connection from Mombasa Airport to Malindi.", path: "/transfer/mombasa-airport-to-malindi" },
+      { title: "SGR connection", text: "Continue from Mombasa SGR to Malindi by arranging the onward leg.", path: "/transfer/sgr-to-malindi" },
+    ],
+    nearbyText: "Malindi is a useful base for seeing more of the coast. Ask about timing and current travel options before setting a day-trip plan.",
+    nearby: [
+      { title: "Watamu and Mida Creek", text: "Move north for beaches, marine experiences and mangrove waterways.", path: "/excursion/watamu-and-mida-creek" },
+      { title: "Mambrui", text: "Add a wider-coast stop north of Malindi.", path: "/excursion/mambrui-excursion" },
+      { title: "Kilifi", text: "Shape a longer coast route south of Malindi.", path: "/excursion/kilifi-excursion" },
+      { title: "Marafa / Hell's Kitchen", text: "Consider an inland landscape excursion.", path: "/excursion/marafa-hells-kitchen" },
+    ],
+    itineraryText: "There is no single right pace. Use a ready-made idea to make the first decision, then message the concierge to adjust it around your arrival, interests and energy.",
+    itineraries: [
+      { title: "1 Day in Malindi", text: "A compact taste of ocean, history and sunset.", path: "/itinerary/1-day-in-malindi" },
+      { title: "3 Days in Malindi", text: "Make room for marine time, culture, food and slow mornings.", path: "/itinerary/3-days-in-malindi" },
+      { title: "Malindi + Watamu", text: "See two different sides of the coast.", path: "/itinerary/malindi-and-watamu" },
+    ],
+  },
+  watamu: {
+    name: "Watamu",
+    slug: "watamu",
+    mark: "WT",
+    eyebrow: "Destination guide · Kenya's coast",
+    title: "Watamu, close to the water.",
+    intro: "A coastal base for beach time, marine experiences, Mida Creek's mangrove waterways, nearby Gede heritage and nature-led days at an easy pace.",
+    image: photos.midaCreek,
+    imageAlt: "Mangrove-lined waters in Mida Creek near Watamu",
+    navLinks: sharedDestinationNav,
+    whyVisit: {
+      title: "Come for the beaches. Stay for the living coast.",
+      text: "Watamu gives a trip a water-first rhythm, with beaches, marine experiences, Mida Creek and access to Gede Ruins and Arabuko Sokoke. It suits families, couples, nature-led travellers and anyone who wants to keep the day open."
+    },
+    focusText: "Start with the water, then choose how far you want to go: a beach morning, a marine experience, a mangrove sunset, a heritage stop or a longer day across the coast.",
+    focusCards: [
+      { title: "What to do", text: "Marine, mangrove, nature, family and beach ideas.", path: "/things-to-do-in-watamu" },
+      { title: "Mida Creek", text: "Mangrove waterways and wide tidal horizons.", path: "/attraction/mida-creek" },
+      { title: "Gede and Arabuko", text: "Heritage and coastal forest close to Watamu.", path: "/excursion/gede-and-arabuko-sokoke" },
+      { title: "Ask a local", text: "Get help shaping a Watamu-first trip.", path: "/contact" },
+    ],
+    sections: [
+      { id: "what-to-do", eyebrow: "Start here", title: "What to do in Watamu", text: "Keep the day simple or build it around the water, wildlife, mangroves, heritage and the nearby coast.", links: [
+        { title: "Things to do in Watamu", text: "Browse water, nature, family and culture-led ideas.", path: "/things-to-do-in-watamu" },
+        { title: "Mida Creek", text: "Slow down among mangroves and tidal horizons.", path: "/experience/mida-creek-sunset" },
+        { title: "Watamu excursions", text: "Use the wider excursion catalogue to shape a day out.", path: "/excursions" },
+      ] },
+      { id: "places", eyebrow: "See the place", title: "Places to visit", text: "Watamu's strongest days often combine a beach or marine stop with somewhere that gives the coast more context.", links: [
+        { title: "Watamu beaches", text: "Start with an easy shoreline day.", path: "/attraction/watamu-beaches" },
+        { title: "Watamu Marine National Park", text: "A marine destination to build into your plans.", path: "/attraction/watamu-marine-national-park" },
+        { title: "Gede Ruins", text: "Historic Swahili settlement remains near the coastal forest.", path: "/attraction/gede-ruins" },
+        { title: "Places to Visit", text: "Browse the wider guide to the Kenyan Coast.", path: "/places-to-visit" },
+      ] },
+      { id: "beaches", eyebrow: "By the water", title: "Beaches in Watamu", text: "Use the beach as your anchor, then decide whether the day needs a marine activity, a nature stop or nothing else at all.", links: [
+        { title: "Watamu beaches", text: "A starting point for choosing your shoreline pace.", path: "/attraction/watamu-beaches" },
+        { title: "Beach activities", text: "Add easy activities for friends or family.", path: "/experience/beach-activities" },
+        { title: "Water sports", text: "Ask about current options on the Watamu coast.", path: "/experience/water-sports" },
+      ] },
+      { id: "marine", eyebrow: "Indian Ocean", title: "Marine experiences", text: "Watamu's water is a central part of the destination. Confirm current conditions, responsible wildlife practice and the right timing before you go.", links: [
+        { title: "Watamu Marine National Park", text: "Explore the Watamu side of the marine coast.", path: "/experience/watamu-marine-national-park" },
+        { title: "Snorkelling on the coast", text: "Spend time in the water with local guidance.", path: "/experience/snorkelling-on-the-coast" },
+        { title: "Dolphin experiences", text: "Ask about responsible experiences and conditions.", path: "/experience/dolphin-experiences" },
+        { title: "Turtle-related experiences", text: "Ask about current, responsible ways to include turtles.", path: "/experience/turtle-related-experiences" },
+      ] },
+      { id: "food", eyebrow: "Taste the coast", title: "Food and dining", text: "Keep meals relaxed: seafood, Swahili flavours, café mornings, casual dining and beach-led evenings all fit the Watamu pace.", links: [
+        { title: "Eat & Drink", text: "Browse the wider guide to food, cafés, seafood and bars.", path: "/eat-and-drink" },
+        { title: "Food by the water", text: "Ask for current category-level recommendations.", path: "/contact" },
+        { title: "Plan a dining day", text: "Tell the concierge what kind of table you want.", path: "/plan-my-trip" },
+      ] },
+      { id: "nightlife", eyebrow: "After dark", title: "Nightlife around Watamu", text: "Nightlife is best treated as a live question: ask what is happening while you are there and whether the evening is better suited to a lounge, music or a beach-led plan.", links: [
+        { title: "Nightlife", text: "Browse current nightlife categories across the coast.", path: "/nightlife" },
+        { title: "What's On", text: "Ask about tonight, this weekend or your travel dates.", path: "/whats-on" },
+      ] },
+      { id: "family", eyebrow: "For all ages", title: "Family activities", text: "Watamu works well when the schedule leaves space for breaks: beach time, short marine activities, Mida Creek and nature can be mixed at an easy pace.", links: [
+        { title: "Family coast day", text: "A flexible starting point for a family day.", path: "/experience/family-coast-day" },
+        { title: "Family holiday", text: "Build a beach, nature and food-led trip.", path: "/itinerary/family-holiday" },
+        { title: "Plan around your group", text: "Ask about current timing and suitable options.", path: "/plan-my-trip" },
+      ] },
+      { id: "couples", eyebrow: "For two", title: "Couples and romantic experiences", text: "Leave room for a quiet beach, a sunset around Mida Creek, a marine experience or an unhurried meal.", links: [
+        { title: "Couples experiences", text: "Find romantic and slow-paced coast ideas.", path: "/experience/couples-coast-day" },
+        { title: "Couple's getaway", text: "A flexible framework for two.", path: "/itinerary/couples-getaway" },
+        { title: "Honeymoon by the Coast", text: "Shape a special trip around unhurried days.", path: "/itinerary/honeymoon" },
+      ] },
+      { id: "nature-culture", eyebrow: "Beyond the beach", title: "Nature, culture and history", text: "Watamu's destination story reaches inland and outward: mangroves, coastal forest and the remains of Gede add depth to a beach-first trip.", links: [
+        { title: "Mida Creek", text: "Explore a mangrove-lined coastal creek.", path: "/attraction/mida-creek" },
+        { title: "Gede Ruins", text: "Add Swahili heritage to the day.", path: "/attraction/gede-ruins" },
+        { title: "Arabuko Sokoke Forest", text: "Consider forest and nature beyond the beach.", path: "/attraction/arabuko-sokoke-forest" },
+        { title: "Gede and Arabuko Sokoke", text: "Combine heritage and forest in one excursion.", path: "/excursion/gede-and-arabuko-sokoke" },
+      ] },
+    ],
+    practicalIntro: "Watamu is connected by road to Malindi and the wider coast. Share where you are arriving from and where you are staying so the current transfer options can be confirmed.",
+    practical: [
+      { title: "Getting around", text: "Arrange the coast legs between Watamu, Malindi and nearby destinations.", path: "/transfers" },
+      { title: "Mombasa Airport", text: "Plan the road connection from Mombasa Airport to Watamu.", path: "/transfer/mombasa-airport-to-watamu" },
+      { title: "Malindi connection", text: "Ask about the road connection between Malindi and Watamu.", path: "/transfer/malindi-to-watamu" },
+      { title: "SGR connection", text: "Continue from Mombasa SGR to Watamu by road.", path: "/transfer/watamu-to-mombasa-sgr" },
+    ],
+    nearbyText: "Watamu sits well for coast days in either direction. Use the concierge to check timing and shape the route around what you want to see.",
+    nearby: [
+      { title: "Malindi", text: "Head south for waterfront history, beaches and marine experiences.", path: "/excursion/malindi-coast-excursion" },
+      { title: "Mambrui", text: "Add a wider-coast stop north of Malindi.", path: "/excursion/mambrui-excursion" },
+      { title: "Kilifi", text: "Shape a longer route south along the coast.", path: "/excursion/kilifi-excursion" },
+      { title: "Mombasa", text: "Consider a longer coastal city connection.", path: "/excursion/mombasa-day-trip" },
+    ],
+    itineraryText: "Start with the part of Watamu you are most excited about, then use the rest of the plan to protect time for the water and the people you are travelling with.",
+    itineraries: [
+      { title: "Malindi + Watamu", text: "See both destinations without rushing the coast.", path: "/itinerary/malindi-and-watamu" },
+      { title: "Family Holiday", text: "Keep beach, nature and food flexible.", path: "/itinerary/family-holiday" },
+      { title: "Couple's Getaway", text: "Balance beach time, food and adventure.", path: "/itinerary/couples-getaway" },
+    ],
+  },
 };
 
 export { photos };
