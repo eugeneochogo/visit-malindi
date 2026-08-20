@@ -9,6 +9,8 @@ Accommodation relationship labels (“Managed by Visit Malindi”, “Visit Mali
 
 For food and nightlife, name venues only when a public source supports the venue identity, category and broad location. Treat permanent venues separately from time-sensitive events: live music, DJs and parties are concierge questions until current event details are supplied.
 
+Transport follows the same request-only model: list route and use-case guidance, but leave vehicle, operator, availability, pricing and arrangement details for WhatsApp confirmation.
+
 **Why:** The product is a frontend-only discovery and manual-concierge service. Commercial and time-sensitive details have not been approved for publication.
 
 **How to apply:** Use factual category-level descriptions and neutral editorial language in new catalogue cards, filters, detail pages and calls to action. Only add provider-specific claims when the user supplies an approved source.

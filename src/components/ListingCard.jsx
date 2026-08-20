@@ -19,7 +19,7 @@ export default function ListingCard({ item, type, showEnquiry = true }) {
   const title = item.route || item.name;
   const eventDetails = [item.venue, item.date, item.startTime].filter(Boolean).join(" · ");
   const enquiryContext = type === "event" ? eventDetails : type === "transfer" ? title : "";
-  const enquiryLabel = type === "food" ? "Book / Enquire" : type === "nightlife" ? "Go Out With Us" : "Enquire on WhatsApp";
+  const enquiryLabel = type === "food" ? "Book / Enquire" : type === "nightlife" ? "Go Out With Us" : type === "transfer" ? "Request Transfer" : "Enquire on WhatsApp";
   return (
     <article className="listing-card">
       <a className="listing-image-wrap" href={path} onClick={(event) => { event.preventDefault(); navigate(path); }}>

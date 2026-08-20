@@ -1,0 +1,100 @@
+Continue Visit Malindi using MASTER-SPECIFICATION.md.
+
+The destination, excursions, accommodation, Eat & Drink and Nightlife sections are now in place.
+
+NEXT: Build the TRANSFERS & TRANSPORT CONCIERGE section.
+
+Visit Malindi should not simply list transport routes. It should allow visitors to REQUEST transport through Visit Malindi, with WhatsApp as the primary enquiry channel.
+
+Build these service categories:
+
+AIRPORT TRANSFERS
+- Malindi Airport ↔ Malindi
+- Malindi Airport ↔ Watamu
+- Mombasa Airport ↔ Malindi
+- Mombasa Airport ↔ Watamu
+
+SGR TRANSFERS
+- Mombasa SGR ↔ Malindi
+- Mombasa SGR ↔ Watamu
+
+INTERCITY
+- Malindi ↔ Watamu
+- Malindi ↔ Kilifi
+- Malindi ↔ Mombasa
+- Malindi ↔ Mambrui
+- Malindi ↔ Lamu
+
+LOCAL / EXPERIENCE TRANSFERS
+- Hotel → Restaurant
+- Hotel → Excursion
+- Hotel → Nightlife
+- Hotel → Airport/SGR
+- Private day-trip transport
+- Group transport
+
+Create a proper Transfers landing page with:
+- Clear service categories
+- Route cards
+- Why use Visit Malindi
+- Simple enquiry flow
+- WhatsApp concierge CTA
+
+Create useful route/service detail pages.
+
+Each service should explain:
+- Route
+- Typical use case
+- Who it is suitable for
+- What Visit Malindi can arrange
+- Related accommodation
+- Related activities
+- Related nightlife/restaurants where relevant
+
+DO NOT invent prices, vehicle types, operators, availability or guarantees.
+
+Do not build online payments or automated booking.
+
+The enquiry process is:
+
+Visitor selects a transfer
+→ clicks "Request Transfer"
+→ WhatsApp opens
+→ Visit Malindi receives the request
+→ Visit Malindi confirms availability, price and arrangements manually.
+
+WhatsApp:
+https://wa.me/254791562000
+
+Use contextual pre-filled messages.
+
+Example:
+
+"Hello Visit Malindi, I need a transfer from Mombasa Airport to my accommodation in Malindi. Please assist."
+
+For route-specific pages, include the route in the message.
+
+Also create a general:
+
+"Arrange My Transport"
+
+WhatsApp CTA for visitors who don't know which service they need.
+
+Connect transfers to:
+- Accommodation
+- Excursions
+- Eat & Drink
+- Nightlife
+- Itineraries
+
+For example, a nightlife page should be able to link to:
+"Need transport tonight? Arrange with Visit Malindi."
+
+An accommodation page should link to:
+"Need airport or SGR transfer? Arrange with Visit Malindi."
+
+Keep the existing Visit Malindi design, navigation and positioning.
+
+Do not redesign unrelated sections.
+
+Make everything responsive and test all routes, navigation and WhatsApp links before completing.

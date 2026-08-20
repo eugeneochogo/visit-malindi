@@ -18,6 +18,10 @@
   <url><loc>https://visitmalindi.co.ke/malindi-nightlife</loc></url>
   <url><loc>https://visitmalindi.co.ke/watamu-nightlife</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfers</loc></url>
+  <url><loc>https://visitmalindi.co.ke/airport-transfers</loc></url>
+  <url><loc>https://visitmalindi.co.ke/sgr-transfers</loc></url>
+  <url><loc>https://visitmalindi.co.ke/intercity-transfers</loc></url>
+  <url><loc>https://visitmalindi.co.ke/local-transfers</loc></url>
   <url><loc>https://visitmalindi.co.ke/malindi-airport-transfer</loc></url>
   <url><loc>https://visitmalindi.co.ke/mombasa-airport-to-malindi</loc></url>
   <url><loc>https://visitmalindi.co.ke/mombasa-to-malindi-transfer</loc></url>
@@ -89,22 +93,23 @@
   <url><loc>https://visitmalindi.co.ke/nightlife/kobe-cocktail-bar-watamu</loc></url>
   <url><loc>https://visitmalindi.co.ke/nightlife/lichthaus-watamu</loc></url>
   <url><loc>https://visitmalindi.co.ke/nightlife/paparemo-beach-watamu</loc></url>
-  <url><loc>https://visitmalindi.co.ke/transfer/malindi-airport-to-hotel</loc></url>
-  <url><loc>https://visitmalindi.co.ke/transfer/hotel-to-malindi-airport</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/malindi-airport-to-malindi</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/malindi-airport-to-watamu</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/mombasa-airport-to-malindi</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/mombasa-airport-to-watamu</loc></url>
-  <url><loc>https://visitmalindi.co.ke/transfer/watamu-to-mombasa-airport</loc></url>
-  <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-mombasa-airport</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/sgr-to-malindi</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/mombasa-sgr-to-watamu</loc></url>
-  <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-mombasa-sgr</loc></url>
-  <url><loc>https://visitmalindi.co.ke/transfer/watamu-to-mombasa-sgr</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-watamu</loc></url>
-  <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-mombasa</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-kilifi</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-mombasa</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-mambrui</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-lamu</loc></url>
-  <url><loc>https://visitmalindi.co.ke/transfer/private-car</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/hotel-to-restaurant</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/hotel-to-excursion</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/hotel-to-nightlife</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/hotel-to-airport-or-sgr</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/private-day-trip-transport</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/group-transport</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/malindi-marine-national-park</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/malindi-beaches</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/vasco-da-gama-pillar</loc></url>

@@ -848,22 +848,23 @@ const nightlifeEntries = [
 ];
 
 const transferEntries = [
-  { id: "malindi-airport-hotel", slug: "malindi-airport-to-hotel", route: "Malindi Airport → Hotel", category: "Airport Transfer", vehicle: "Ask for options", location: "Malindi", image: photos.dhow, description: "Ask Visit Malindi for help arranging the next step from Malindi Airport to your accommodation." },
-  { id: "hotel-malindi-airport", slug: "hotel-to-malindi-airport", route: "Hotel → Malindi Airport", category: "Airport Transfer", vehicle: "Ask for options", location: "Malindi", image: photos.dhow, description: "Plan your return to Malindi Airport with a transfer enquiry shaped around your departure time." },
-  { id: "mombasa-airport-malindi", slug: "mombasa-airport-to-malindi", route: "Mombasa Airport → Malindi", category: "Airport Transfer", vehicle: "Private vehicle", location: "Mombasa to Malindi", image: photos.dhow, description: "Start your coast trip smoothly with a private transfer enquiry from Mombasa Airport to Malindi." },
-  { id: "mombasa-airport-watamu", slug: "mombasa-airport-to-watamu", route: "Mombasa Airport → Watamu", category: "Airport Transfer", vehicle: "Ask for options", location: "Mombasa to Watamu", image: photos.ocean, description: "Ask about current transfer options from Mombasa Airport to Watamu." },
-  { id: "watamu-mombasa-airport", slug: "watamu-to-mombasa-airport", route: "Watamu → Mombasa Airport", category: "Airport Transfer", vehicle: "Ask for options", location: "Watamu to Mombasa", image: photos.ocean, description: "Plan the airport leg from Watamu around your flight timing with a direct enquiry." },
-  { id: "malindi-mombasa-airport", slug: "malindi-to-mombasa-airport", route: "Malindi → Mombasa Airport", category: "Airport Transfer", vehicle: "Ask for options", location: "Malindi to Mombasa", image: photos.dhow, description: "Ask for transfer support from Malindi to Mombasa Airport." },
-  { id: "mombasa-sgr-malindi", slug: "sgr-to-malindi", route: "Mombasa SGR → Malindi", category: "SGR Transfer", vehicle: "Private vehicle", location: "Mombasa to Malindi", image: photos.beach, description: "Arriving by train? Ask Visit Malindi to help arrange the next leg from Mombasa SGR." },
-  { id: "mombasa-sgr-watamu", slug: "mombasa-sgr-to-watamu", route: "Mombasa SGR → Watamu", category: "SGR Transfer", vehicle: "Ask for options", location: "Mombasa to Watamu", image: photos.beach, description: "Ask Visit Malindi about the next step from Mombasa SGR to Watamu." },
-  { id: "malindi-mombasa-sgr", slug: "malindi-to-mombasa-sgr", route: "Malindi → Mombasa SGR", category: "SGR Transfer", vehicle: "Ask for options", location: "Malindi to Mombasa", image: photos.dhow, description: "Plan a Malindi to Mombasa SGR transfer around your train time." },
-  { id: "watamu-mombasa-sgr", slug: "watamu-to-mombasa-sgr", route: "Watamu → Mombasa SGR", category: "SGR Transfer", vehicle: "Ask for options", location: "Watamu to Mombasa", image: photos.ocean, description: "Ask about a Watamu to Mombasa SGR transfer that fits your onward travel." },
-  { id: "malindi-watamu", slug: "malindi-to-watamu", route: "Malindi ↔ Watamu", category: "Coastal Transfer", vehicle: "Private vehicle", location: "Malindi & Watamu", image: photos.ocean, description: "Move between two of the coast's most loved destinations with a transfer matched to your plans." },
-  { id: "malindi-mombasa", slug: "malindi-to-mombasa", route: "Malindi ↔ Mombasa", category: "Coastal Transfer", vehicle: "Ask for options", location: "Malindi & Mombasa", image: photos.dhow, description: "Ask about transfer options between Malindi and Mombasa." },
-  { id: "malindi-kilifi", slug: "malindi-to-kilifi", route: "Malindi ↔ Kilifi", category: "Coastal Transfer", vehicle: "Ask for options", location: "Malindi & Kilifi", image: photos.ocean, description: "Shape a coast journey between Malindi and Kilifi with a transfer enquiry." },
-  { id: "malindi-mambrui", slug: "malindi-to-mambrui", route: "Malindi ↔ Mambrui", category: "Coastal Transfer", vehicle: "Ask for options", location: "Malindi & Mambrui", image: photos.beach, description: "Ask about current transfer options between Malindi and Mambrui." },
-  { id: "malindi-lamu", slug: "malindi-to-lamu", route: "Malindi ↔ Lamu", category: "Coastal Transfer", vehicle: "Ask for options", location: "Malindi & Lamu", image: photos.dhow, description: "For a wider coast journey involving Malindi and Lamu, ask Visit Malindi for current travel options." },
-  { id: "private-car", slug: "private-car", route: "Private car and van hire", category: "Private Transport", vehicle: "Car or van", location: "Malindi area", image: photos.dhow, description: "For airport pickups, day trips and groups, tell us what you need and we will help with options." },
+  { id: "malindi-airport-malindi", slug: "malindi-airport-to-malindi", route: "Malindi Airport ↔ Malindi", category: "Airport Transfers", location: "Malindi", image: photos.dhow, description: "Request a connection between Malindi Airport and your Malindi accommodation or plans.", typicalUse: "For arrivals, departures or an airport leg that needs to fit around your accommodation, luggage and wider plans." },
+  { id: "malindi-airport-watamu", slug: "malindi-airport-to-watamu", route: "Malindi Airport ↔ Watamu", category: "Airport Transfers", location: "Malindi & Watamu", image: photos.ocean, description: "Request an airport connection between Malindi Airport and Watamu.", typicalUse: "For visitors using Malindi Airport while staying in, or continuing to, Watamu." },
+  { id: "mombasa-airport-malindi", slug: "mombasa-airport-to-malindi", route: "Mombasa Airport ↔ Malindi", category: "Airport Transfers", location: "Mombasa & Malindi", image: photos.dhow, description: "Request a coast connection between Mombasa Airport and Malindi.", typicalUse: "For international or domestic arrivals and departures that need a road transfer to or from Malindi." },
+  { id: "mombasa-airport-watamu", slug: "mombasa-airport-to-watamu", route: "Mombasa Airport ↔ Watamu", category: "Airport Transfers", location: "Mombasa & Watamu", image: photos.ocean, description: "Request a coast connection between Mombasa Airport and Watamu.", typicalUse: "For arrivals and departures that need to connect Mombasa Airport with a Watamu stay or itinerary." },
+  { id: "mombasa-sgr-malindi", slug: "sgr-to-malindi", route: "Mombasa SGR ↔ Malindi", category: "SGR Transfers", location: "Mombasa & Malindi", image: photos.beach, description: "Request the road connection between Mombasa SGR and Malindi.", typicalUse: "For travellers arriving at, or departing from, Mombasa SGR and continuing their trip to Malindi." },
+  { id: "mombasa-sgr-watamu", slug: "mombasa-sgr-to-watamu", route: "Mombasa SGR ↔ Watamu", category: "SGR Transfers", location: "Mombasa & Watamu", image: photos.beach, description: "Request the road connection between Mombasa SGR and Watamu.", typicalUse: "For travellers arriving at, or departing from, Mombasa SGR and continuing their trip to Watamu." },
+  { id: "malindi-watamu", slug: "malindi-to-watamu", route: "Malindi ↔ Watamu", category: "Intercity", location: "Malindi & Watamu", image: photos.ocean, description: "Request an intercity transfer between Malindi and Watamu.", typicalUse: "For moving between the two destinations while keeping your beach, dining, activity or accommodation plans connected." },
+  { id: "malindi-kilifi", slug: "malindi-to-kilifi", route: "Malindi ↔ Kilifi", category: "Intercity", location: "Malindi & Kilifi", image: photos.ocean, description: "Request an intercity transfer between Malindi and Kilifi.", typicalUse: "For a coast leg between Malindi and Kilifi, whether it is part of a stay, a day out or a wider itinerary." },
+  { id: "malindi-mombasa", slug: "malindi-to-mombasa", route: "Malindi ↔ Mombasa", category: "Intercity", location: "Malindi & Mombasa", image: photos.dhow, description: "Request an intercity transfer between Malindi and Mombasa.", typicalUse: "For travellers linking Malindi with Mombasa without needing to present fixed routes, vehicles or schedules on the site." },
+  { id: "malindi-mambrui", slug: "malindi-to-mambrui", route: "Malindi ↔ Mambrui", category: "Intercity", location: "Malindi & Mambrui", image: photos.beach, description: "Request an intercity transfer between Malindi and Mambrui.", typicalUse: "For a north-coast connection that can be shaped around the rest of your plans." },
+  { id: "malindi-lamu", slug: "malindi-to-lamu", route: "Malindi ↔ Lamu", category: "Intercity", location: "Malindi & Lamu", image: photos.dhow, description: "Ask Visit Malindi for help planning a Malindi and Lamu connection.", typicalUse: "For wider coast travel where the most suitable current arrangements need to be confirmed manually." },
+  { id: "hotel-restaurant", slug: "hotel-to-restaurant", route: "Hotel → Restaurant", category: "Local & Experience Transfers", location: "Malindi & Watamu", image: photos.dining, description: "Request local transport between your accommodation and a restaurant plan.", typicalUse: "For dinner plans that need a simple connection from your stay, especially when you would rather not work out the local logistics alone." },
+  { id: "hotel-excursion", slug: "hotel-to-excursion", route: "Hotel → Excursion", category: "Local & Experience Transfers", location: "Malindi & Watamu", image: photos.ocean, description: "Request local transport between your accommodation and an excursion or activity.", typicalUse: "For fitting a chosen activity or day trip into the practical start and end of your day." },
+  { id: "hotel-nightlife", slug: "hotel-to-nightlife", route: "Hotel → Nightlife", category: "Local & Experience Transfers", location: "Malindi & Watamu", image: photos.night, description: "Request transport between your accommodation and an evening or nightlife plan.", typicalUse: "For dinner, drinks, group evenings and a safer-feeling route back to your accommodation." },
+  { id: "hotel-airport-sgr", slug: "hotel-to-airport-or-sgr", route: "Hotel → Airport / SGR", category: "Local & Experience Transfers", location: "Malindi & Watamu", image: photos.dhow, description: "Request a connection between your accommodation and an airport or SGR departure.", typicalUse: "For departure-day planning when your stay and onward connection need to be coordinated." },
+  { id: "private-day-trip", slug: "private-day-trip-transport", route: "Private day-trip transport", category: "Local & Experience Transfers", location: "Malindi & Watamu", image: photos.mangrove, description: "Request transport for a privately planned coast day.", typicalUse: "For a flexible day shaped around the places, stops and pace that matter to you." },
+  { id: "group-transport", slug: "group-transport", route: "Group transport", category: "Local & Experience Transfers", location: "Malindi & Watamu", image: photos.family, description: "Request transport planning for a group.", typicalUse: "For friends, families and other groups who want to coordinate a shared arrival, day out, dinner or evening." },
 ];
 
 const attractionEntries = [
@@ -993,7 +994,7 @@ const stayPlanningLinks = [
   { label: "Things to do", path: "/things-to-do" },
   { label: "Excursions", path: "/excursions" },
   { label: "Eat & drink", path: "/eat-and-drink" },
-  { label: "Transfers", path: "/transfers" },
+  { label: "Need airport or SGR transfer? Arrange with Visit Malindi.", path: "/transfers" },
   { label: "Itineraries", path: "/itineraries" },
 ];
 
@@ -1029,7 +1030,7 @@ const nightlifePlanningLinks = [
   { label: "Eat & drink", path: "/eat-and-drink" },
   { label: "Places to stay", path: "/places-to-stay" },
   { label: "Things to do", path: "/things-to-do" },
-  { label: "Transfers", path: "/transfers" },
+  { label: "Need transport tonight? Arrange with Visit Malindi.", path: "/transfers" },
   { label: "Itineraries", path: "/itineraries" },
   { label: "What's on", path: "/whats-on" },
 ];
@@ -1061,12 +1062,35 @@ function enrichNightlife(item) {
   };
 }
 
+const transferPlanningLinks = [
+  { label: "Places to stay", path: "/places-to-stay" },
+  { label: "Things to do", path: "/things-to-do" },
+  { label: "Excursions", path: "/excursions" },
+  { label: "Eat & drink", path: "/eat-and-drink" },
+  { label: "Nightlife", path: "/nightlife" },
+  { label: "Itineraries", path: "/itineraries" },
+];
+
+function enrichTransfer(item) {
+  return {
+    ...item,
+    fullDescription: item.fullDescription || `${item.description} Visit Malindi receives your request on WhatsApp, then confirms the available options, price and practical arrangements manually.`,
+    suitableFor: item.suitableFor || ["Couples", "Families", "Friends", "Groups", "Independent travellers"],
+    whatToExpect: item.whatToExpect || ["A manual request based on your route, date, group and timing", "Current availability, price and practical arrangements confirmed through WhatsApp", "Help connecting your transfer with accommodation, activities, dining, nightlife or an itinerary where relevant"],
+    usefulInfo: item.usefulInfo || ["Visit Malindi does not process automated bookings or payments for transfers.", "Share your route, date, number of passengers and pickup or arrival time so the concierge can confirm the current options.", "Vehicle, operator, availability, price and timing details are confirmed manually before any arrangements are made."],
+    nearbyPlaces: item.nearbyPlaces || defaultNearbyPlaces(item.location),
+    planningLinks: item.planningLinks || transferPlanningLinks,
+    imageCaption: item.imageCaption || "Illustrative coast travel image — confirm current transfer details with Visit Malindi.",
+    imageIsIllustrative: true,
+  };
+}
+
 export const experiences = experienceEntries.map(enrichDiscoveryItem).map(withListingFields);
 export const excursions = excursionEntries.map(enrichDiscoveryItem).map(withListingFields);
 export const stays = stayEntries.map(enrichStay).map(withListingFields);
 export const foodGuides = foodEntries.map(enrichFood).map(withListingFields);
 export const nightlife = nightlifeEntries.map(enrichNightlife).map(withListingFields);
-export const transfers = transferEntries.map(withListingFields);
+export const transfers = transferEntries.map(enrichTransfer).map(withListingFields);
 export const attractions = attractionEntries.map(withListingFields);
 export const itineraries = itineraryEntries.map(withListingFields);
 
@@ -1119,7 +1143,11 @@ export const pageMeta = {
   "/nightlife": ["Nightlife in Malindi & Watamu | Visit Malindi", "Explore permanent coast venues, then ask Visit Malindi for tonight's local guidance, dinner plans, reservations and transport."],
   "/malindi-nightlife": ["Nightlife in Malindi | Visit Malindi", "Explore permanent Malindi venues and ask Visit Malindi to plan your night out, reservations and transport."],
   "/watamu-nightlife": ["Nightlife in Watamu | Visit Malindi", "Explore permanent Watamu venues and ask Visit Malindi to plan your night out, reservations and transport."],
-  "/transfers": ["Malindi Airport, SGR & Coastal Transfers | Visit Malindi", "Plan your journey to Malindi with local help for airport, SGR and coastal transfers."],
+  "/transfers": ["Malindi Transfers & Transport Concierge | Visit Malindi", "Request airport, SGR, intercity, local and experience transport through Visit Malindi on WhatsApp."],
+  "/airport-transfers": ["Airport Transfers for Malindi & Watamu | Visit Malindi", "Request airport transport between Malindi or Mombasa Airport and Malindi or Watamu through the Visit Malindi concierge."],
+  "/sgr-transfers": ["Mombasa SGR Transfers | Visit Malindi", "Request a connection between Mombasa SGR and Malindi or Watamu through the Visit Malindi concierge."],
+  "/intercity-transfers": ["Intercity Transfers on the Kenyan Coast | Visit Malindi", "Request travel between Malindi, Watamu, Kilifi, Mombasa, Mambrui and Lamu through Visit Malindi."],
+  "/local-transfers": ["Local & Experience Transfers | Visit Malindi", "Request hotel, restaurant, excursion, nightlife, airport, day-trip or group transport through Visit Malindi."],
   "/places-to-visit": ["Places to Visit in Malindi | Visit Malindi", "Beaches, history, nature and culture across Malindi, Watamu and the Kenyan Coast."],
   "/itineraries": ["Malindi Itineraries | Visit Malindi", "Ready-made ideas for one day, three days, a weekend, a family holiday or a honeymoon."],
   "/whats-on": ["What's On in Malindi | Visit Malindi", "Find out what is happening in Malindi tonight and this weekend."],
@@ -1212,7 +1240,7 @@ export const destinations = {
     practicalIntro: "Whether you arrive by air, train or road, the easiest next step is to share your arrival details and destination with the concierge so the current options can be confirmed.",
     practical: [
       { title: "Getting around", text: "Ask about private coastal transfers and moving between Malindi, Watamu and nearby destinations.", path: "/transfers" },
-      { title: "Malindi Airport", text: "Arrange the airport-to-hotel leg around your arrival time.", path: "/transfer/malindi-airport-to-hotel" },
+      { title: "Malindi Airport", text: "Arrange the airport-to-Malindi leg around your arrival time.", path: "/transfer/malindi-airport-to-malindi" },
       { title: "Mombasa Airport", text: "Plan the road connection from Mombasa Airport to Malindi.", path: "/transfer/mombasa-airport-to-malindi" },
       { title: "SGR connection", text: "Continue from Mombasa SGR to Malindi by arranging the onward leg.", path: "/transfer/sgr-to-malindi" },
     ],
@@ -1305,7 +1333,7 @@ export const destinations = {
       { title: "Getting around", text: "Arrange the coast legs between Watamu, Malindi and nearby destinations.", path: "/transfers" },
       { title: "Mombasa Airport", text: "Plan the road connection from Mombasa Airport to Watamu.", path: "/transfer/mombasa-airport-to-watamu" },
       { title: "Malindi connection", text: "Ask about the road connection between Malindi and Watamu.", path: "/transfer/malindi-to-watamu" },
-      { title: "SGR connection", text: "Continue from Mombasa SGR to Watamu by road.", path: "/transfer/watamu-to-mombasa-sgr" },
+      { title: "SGR connection", text: "Continue from Mombasa SGR to Watamu by road.", path: "/transfer/mombasa-sgr-to-watamu" },
     ],
     nearbyText: "Watamu sits well for coast days in either direction. Use the concierge to check timing and shape the route around what you want to see.",
     nearby: [

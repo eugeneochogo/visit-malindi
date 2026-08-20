@@ -15,6 +15,7 @@ export function enquiryMessage(type, name, context = "") {
     excursion: `${intro}\n\nI'm interested in the ${name} excursion.\n\nDate:\nNumber of people:\n\nPlease share the current options and help me plan the day.`,
     stay: `${intro}\n\nI'm interested in ${name}.\n\nCheck-in:\nCheck-out:\nNumber of guests:\n\nPlease share availability and rates.`,
     transfer: `${intro}\n\nI'd like to arrange:\n${name}\n\nDate:\nNumber of passengers:\nPickup/arrival time:\n\nPlease share the available options and price.`,
+    transferGeneral: `${intro}\n\nI'd like help arranging transport for my trip.\n\nFrom:\nTo:\nDate:\nNumber of passengers:\nPickup/arrival time:\n\nPlease help me choose the right transfer and confirm the available options and price.`,
     nightlife: nightlifeLocation
       ? `Hello Visit Malindi, I would like help planning my night out ${nightlifeLocationLabel}.\n\nDate:\nNumber of people:\n\nPlease help with where to go tonight, restaurant and nightlife plans, reservations, transport and local guidance where available.`
       : name
