@@ -31,7 +31,7 @@ export const exploreCategories = [
   { title: "Places to Visit", text: "Beaches, history, nature and attractions.", path: "/places-to-visit", image: photos.ruins, tone: "olive" },
 ];
 
-export const experiences = [
+const experienceEntries = [
   {
     id: "malindi-marine-park",
     slug: "malindi-marine-park",
@@ -106,7 +106,7 @@ export const experiences = [
   },
 ];
 
-export const stays = [
+const stayEntries = [
   {
     id: "beachfront-stays",
     slug: "beachfront-stays",
@@ -139,35 +139,35 @@ export const stays = [
   },
 ];
 
-export const foodGuides = [
+const foodEntries = [
   { id: "seafood", slug: "seafood", name: "Seafood on the coast", category: "Seafood", location: "Malindi & Watamu", image: photos.dining, description: "From the catch of the day to relaxed beach dining, ask a local where to eat seafood tonight." },
   { id: "swahili-food", slug: "swahili-food", name: "Swahili flavours", category: "Local food", location: "Malindi", image: photos.dining, description: "Discover the spices, textures and generous spirit of coastal Swahili cooking." },
   { id: "cafes", slug: "cafes", name: "Cafés & slow mornings", category: "Café", location: "Malindi", image: photos.beach, description: "Easy places for coffee, a quiet breakfast or a break between beach plans." },
   { id: "romantic-dining", slug: "romantic-dining", name: "Romantic dining", category: "Romantic Dining", location: "Malindi & Watamu", image: photos.sunset, description: "Make an evening of it with a table, a sunset and the sea nearby." },
 ];
 
-export const nightlife = [
+const nightlifeEntries = [
   { id: "clubs-djs", slug: "clubs-djs", name: "Clubs & DJs", category: "DJ", location: "Malindi", image: photos.night, description: "Find the energy after dark, from weekend parties to late-night DJ sets." },
   { id: "beach-lounges", slug: "beach-lounges", name: "Bars & beach lounges", category: "Lounge", location: "Malindi & Watamu", image: photos.sunset, description: "Cocktails, sea air and the kind of evening that can go wherever the night takes you." },
   { id: "live-music", slug: "live-music", name: "Live music", category: "Live Music", location: "Malindi", image: photos.night, description: "Ask what is playing tonight, from acoustic sets to local artists and bands." },
   { id: "beach-parties", slug: "beach-parties", name: "Beach parties", category: "Beach Party", location: "Malindi & Watamu", image: photos.beach, description: "Sunset parties, special events and nights with sand beneath your feet." },
 ];
 
-export const transfers = [
+const transferEntries = [
   { id: "mombasa-airport-malindi", slug: "mombasa-airport-to-malindi", route: "Mombasa Airport → Malindi", category: "Airport Transfer", vehicle: "Private vehicle", location: "Mombasa to Malindi", image: photos.dhow, description: "Start your coast trip smoothly with a private transfer enquiry from Mombasa Airport to Malindi." },
   { id: "mombasa-sgr-malindi", slug: "sgr-to-malindi", route: "Mombasa SGR → Malindi", category: "SGR Transfer", vehicle: "Private vehicle", location: "Mombasa to Malindi", image: photos.beach, description: "Arriving by train? Ask Visit Malindi to help arrange the next leg from Mombasa SGR." },
   { id: "malindi-watamu", slug: "malindi-to-watamu", route: "Malindi ↔ Watamu", category: "Coastal Transfer", vehicle: "Private vehicle", location: "Malindi & Watamu", image: photos.ocean, description: "Move between two of the coast's most loved destinations with a transfer matched to your plans." },
   { id: "private-car", slug: "private-car", route: "Private car and van hire", category: "Private Transport", vehicle: "Car or van", location: "Malindi area", image: photos.dhow, description: "For airport pickups, day trips and groups, tell us what you need and we will help with options." },
 ];
 
-export const attractions = [
+const attractionEntries = [
   { id: "malindi-beaches", slug: "malindi-beaches", name: "Malindi beaches", category: "Beach", location: "Malindi", image: photos.beach, description: "Find your kind of beach day, from a quiet shoreline to the easy rhythm of a family afternoon." },
   { id: "vasco-da-gama-pillar", slug: "vasco-da-gama-pillar", name: "Vasco da Gama Pillar", category: "Historical", location: "Malindi", image: photos.ocean, description: "A landmark on the Malindi waterfront and a natural stop while exploring the old town and coast." },
   { id: "arabuko-sokoke", slug: "arabuko-sokoke", name: "Arabuko Sokoke", category: "Nature", location: "Coastal Kenya", image: photos.mangrove, description: "A forest world for travellers who want a change of pace, with nature walks and birding possibilities." },
   { id: "malindi-old-town", slug: "malindi-old-town", name: "Malindi Old Town", category: "Culture", location: "Malindi", image: photos.ruins, description: "Take a slower walk through the layers of coastal history, culture and everyday life." },
 ];
 
-export const itineraries = [
+const itineraryEntries = [
   { id: "1-day-malindi", slug: "1-day-in-malindi", name: "1 Day in Malindi", duration: "1 day", audience: "First-time visitors", image: photos.beach, description: "A taste of sea, history and a sunset when you only have a day.", days: [{ day: 1, activities: ["Morning by the ocean", "A local lunch", "Sunset by the coast"] }] },
   { id: "2-days-malindi", slug: "2-days-in-malindi", name: "2 Days in Malindi", duration: "2 days", audience: "First-time visitors", image: photos.dhow, description: "Two unhurried days for getting your bearings, feeling the coast and finding a little more of Malindi.", days: [{ day: 1, activities: ["Settle in", "Explore the coast", "An easy evening"] }, { day: 2, activities: ["Choose an experience", "A local lunch", "Sunset plans"] }] },
   { id: "3-days-malindi", slug: "3-days-in-malindi", name: "3 Days in Malindi", duration: "3 days", audience: "General", image: photos.ocean, description: "A balanced first trip with room for marine time, culture, good food and slow mornings.", days: [{ day: 1, activities: ["Settle into the coast", "Explore Malindi", "Sunset plans"] }, { day: 2, activities: ["Marine or beach experience", "Lunch by the water", "A night out"] }, { day: 3, activities: ["Gede Ruins or nature", "Local flavours", "One last ocean view"] }] },
@@ -181,6 +181,49 @@ export const itineraries = [
   { id: "relaxation-trip", slug: "relaxation-trip", name: "Relaxation Trip", duration: "Flexible", audience: "Slow travellers", image: photos.beach, description: "For travellers who would rather leave the schedule open and let the coast set the pace.", days: [{ day: 1, activities: ["Arrive and exhale", "A quiet meal"] }, { day: 2, activities: ["Beach time", "Sunset"] }] },
 ];
 
+const withListingFields = (item) => ({
+  ...item,
+  images: item.images || item.gallery || (item.image ? [item.image] : []),
+  gallery: item.gallery || item.images || (item.image ? [item.image] : []),
+  usefulInfo: item.usefulInfo || ["Ask Visit Malindi about current availability, pricing and the best fit for your plans."],
+  mapUrl: item.mapUrl || null,
+  websiteUrl: item.websiteUrl || null,
+  socialUrl: item.socialUrl || null,
+});
+
+export const experiences = experienceEntries.map(withListingFields);
+export const stays = stayEntries.map(withListingFields);
+export const foodGuides = foodEntries.map(withListingFields);
+export const nightlife = nightlifeEntries.map(withListingFields);
+export const transfers = transferEntries.map(withListingFields);
+export const attractions = attractionEntries.map(withListingFields);
+export const itineraries = itineraryEntries.map(withListingFields);
+
+// Keep this catalogue empty until current event details are supplied.
+// Use this shape when adding time-sensitive event records.
+export const eventTemplate = {
+  id: "event-slug",
+  slug: "event-slug",
+  name: "Event name",
+  venue: null,
+  date: null,
+  startTime: null,
+  category: "Event",
+  image: null,
+  description: "Add a concise event description.",
+  location: "Malindi",
+  verified: false,
+  filters: [],
+  expiresAt: null,
+  highlights: [],
+  usefulInfo: [],
+  images: [],
+  mapUrl: null,
+  websiteUrl: null,
+  socialUrl: null,
+};
+export const events = [];
+
 export const searchIndex = [
   ...experiences.map((item) => ({ ...item, type: "Experience", path: `/experience/${item.slug}` })),
   ...stays.map((item) => ({ ...item, type: "Stay", path: `/stay/${item.slug}` })),
@@ -189,6 +232,7 @@ export const searchIndex = [
   ...transfers.map((item) => ({ ...item, name: item.route, type: "Transfer", path: `/transfer/${item.slug}` })),
   ...attractions.map((item) => ({ ...item, type: "Place to Visit", path: `/attraction/${item.slug}` })),
   ...itineraries.map((item) => ({ ...item, type: "Itinerary", path: `/itinerary/${item.slug}` })),
+  ...events.map((item) => ({ ...item, type: "Event", path: `/event/${item.slug}` })),
 ];
 
 export const pageMeta = {

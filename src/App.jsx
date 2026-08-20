@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   attractions,
+  events,
   exploreCategories,
   experiences,
   foodGuides,
@@ -14,16 +15,8 @@ import {
   photos,
 } from "./data";
 import { enquiryMessage, isWhatsAppConfigured, navigate, slugFromPath, whatsappLink } from "./utils";
-
-const catalogues = {
-  experiences,
-  stays,
-  foodGuides,
-  nightlife,
-  transfers,
-  attractions,
-  itineraries,
-};
+import ListingCard from "./components/ListingCard";
+import ReusableDetailPage from "./components/DetailPage";
 
 const catalogueByRoute = {
   "/things-to-do": { title: "Things to do in Malindi", eyebrow: "Explore", intro: "From the Indian Ocean to coastal forest, find an experience that feels like your kind of day.", data: experiences, type: "experience", filters: ["All", "Marine", "Nature", "History & Culture", "Adventure"] },
@@ -140,16 +133,6 @@ function ExploreCard({ item, index }) {
   return <a className={`explore-card explore-card-${item.tone}`} href={item.path} onClick={(e) => { e.preventDefault(); navigate(item.path); }}><SmartImage src={item.image} alt={item.title} /><div className="explore-card-shade" /><span className="explore-number">0{index + 1}</span><div className="explore-card-copy"><h3>{item.title}</h3><p>{item.text}</p><span className="text-link">Explore <Icon name="arrow" size={15} /></span></div></a>;
 }
 
-function ListingCard({ item, type }) {
-  const pathMap = { experience: "experience", stay: "stay", food: "eat-and-drink", nightlife: "nightlife", transfer: "transfer", attraction: "attraction", itinerary: "itinerary" };
-  const path = `/${pathMap[type]}/${item.slug}`;
-  const title = item.route || item.name;
-  return <article className="listing-card">
-    <a className="listing-image-wrap" href={path} onClick={(e) => { e.preventDefault(); navigate(path); }}><SmartImage src={item.image} alt={title} /><span className="card-arrow"><Icon name="arrow" size={16} /></span></a>
-    <div className="listing-card-body"><div className="listing-meta"><span>{item.category}</span><span><Icon name="pin" size={13} /> {item.location}</span></div><a href={path} onClick={(e) => { e.preventDefault(); navigate(path); }}><h3>{title}</h3></a><p>{item.description}</p><a className="text-link" href={path} onClick={(e) => { e.preventDefault(); navigate(path); }}>Discover more <Icon name="arrow" size={14} /></a></div>
-  </article>;
-}
-
 function HomePage() {
   return <>
     <main>
@@ -196,15 +179,9 @@ function ListingPage({ config }) {
 function EventsPage() {
   const [filter, setFilter] = useState("Tonight");
   const filters = ["Tonight", "This Weekend", "Events", "DJ", "Live Music", "Beach Party", "Nightlife", "Family", "Food"];
-  return <main className="page-shell"><section className="page-hero page-width"><span className="eyebrow">Stay in the know</span><h1>What's happening?</h1><p>Events are time-sensitive. Ask us what is happening tonight, this weekend or while you are in town.</p><div className="page-hero-actions"><WhatsAppButton type="nightlife" name="Club / DJ / Live Music / Beach Party / Lounge" label="Ask What's Happening Tonight" /></div></section><section className="page-width event-filters"><Filters filters={filters} active={filter} onChange={setFilter} /></section><section className="empty-events page-width"><div className="empty-events-art"><Icon name="calendar" size={35} /></div><span className="eyebrow">No active {filter.toLowerCase()} listings yet</span><h2>Let's make a plan.</h2><p>We keep this guide current rather than filling it with expired events. Message us for the latest local word.</p><WhatsAppButton type="nightlife" name="Club / DJ / Live Music / Beach Party / Lounge" label="Ask What's Happening Tonight" /></section><TrustNote /></main>;
-}
-
-function DetailPage({ type, item }) {
-  if (!item) return <NotFound />;
-  const singular = type === "experience" ? "experience" : type === "stay" ? "accommodation" : type === "transfer" ? "transfer" : type === "nightlife" ? "nightlife" : type === "itinerary" ? "itinerary" : "place";
-  const cta = { experience: "Ask About This Experience", stay: "Ask About Availability", transfer: "Arrange This Transfer", nightlife: "Ask What's Happening Tonight", itinerary: "Plan My Trip" }[type] || "Talk to a Local";
-  const messageName = item.route || item.name;
-  return <main className="detail-page"><div className="detail-hero page-width"><div className="detail-hero-image"><SmartImage src={item.image} alt={messageName} /></div><div className="detail-hero-copy"><span className="eyebrow">{item.category || singular}</span><h1>{messageName}</h1><p className="detail-location"><Icon name="pin" size={16} /> {item.location}</p><p>{item.description}</p><WhatsAppButton type={type} name={messageName} label={cta} /></div></div><div className="detail-body page-width"><div className="detail-main"><SectionHeading eyebrow="Good to know" title={type === "itinerary" ? "A starting point, not a script." : "Make it yours."} text={type === "itinerary" ? "Use this idea as a framework, then tell us what you want to add, skip or change." : "Every trip is different. We can help with the details that matter to you."} />{item.highlights && <div className="highlight-list">{item.highlights.map((highlight) => <div key={highlight}><span className="highlight-dot" />{highlight}</div>)}</div>}{item.amenities && <div className="highlight-list">{item.amenities.map((amenity) => <div key={amenity}><span className="highlight-dot" />{amenity}</div>)}</div>}{item.days && <div className="itinerary-days">{item.days.map((day) => <div className="itinerary-day" key={day.day}><span className="day-number">0{day.day}</span><div><span className="eyebrow">Day {day.day}</span>{day.activities.map((activity) => <p key={activity}>{activity}</p>)}</div></div>)}</div>}<div className="detail-callout"><span className="eyebrow">Keep it flexible</span><p>Information may change. Confirm availability, pricing and schedules with Visit Malindi before making arrangements.</p></div></div><aside className="detail-aside"><div className="aside-card"><span className="eyebrow">Plan with a local</span><h3>Have a question about this {singular}?</h3><p>Tell us what you are looking for and we will help you take the next step.</p><WhatsAppButton type={type} name={messageName} label={cta} /><a className="text-link" href="/plan-my-trip" onClick={(e) => { e.preventDefault(); navigate("/plan-my-trip"); }}>Build a bigger plan <Icon name="arrow" size={15} /></a></div></aside></div><section className="section page-width related-section"><SectionHeading eyebrow="Keep exploring" title="More for your trip" action={<a className="text-link text-link-dark" href="/things-to-do" onClick={(e) => { e.preventDefault(); navigate("/things-to-do"); }}>Back to Explore <Icon name="arrow" size={15} /></a>} /><div className="listing-grid">{experiences.filter((experience) => experience.id !== item.id).slice(0, 3).map((experience) => <ListingCard key={experience.id} item={experience} type="experience" />)}</div></section></main>;
+  const activeEvents = events.filter((event) => !event.expiresAt || new Date(event.expiresAt) >= new Date());
+  const visible = activeEvents.filter((event) => filter === "Events" || event.filters?.includes(filter) || event.category === filter);
+  return <main className="page-shell"><section className="page-hero page-width"><span className="eyebrow">Stay in the know</span><h1>What's happening?</h1><p>Events are time-sensitive. Ask us what is happening tonight, this weekend or while you are in town.</p><div className="page-hero-actions"><WhatsAppButton type="nightlife" name="Club / DJ / Live Music / Beach Party / Lounge" label="Ask What's Happening Tonight" /></div></section><section className="page-width event-filters"><Filters filters={filters} active={filter} onChange={setFilter} /></section>{visible.length ? <section className="section page-width listing-section"><div className="listing-grid listing-grid-large">{visible.map((event) => <ListingCard key={event.id} item={event} type="event" />)}</div></section> : <section className="empty-events page-width"><div className="empty-events-art"><Icon name="calendar" size={35} /></div><span className="eyebrow">No active {filter.toLowerCase()} listings yet</span><h2>Let's make a plan.</h2><p>We keep this guide current rather than filling it with expired events. Message us for the latest local word.</p><WhatsAppButton type="nightlife" name="Club / DJ / Live Music / Beach Party / Lounge" label="Ask What's Happening Tonight" /></section>}<TrustNote /></main>;
 }
 
 function Planner() {
@@ -318,13 +295,14 @@ function App() {
   else if (pathname === "/terms") content = <LegalPage title="Terms of Use"><p>Visit Malindi is a discovery and enquiry platform, not a booking or payment platform. Information on the website is intended to help you plan and should be confirmed before you make arrangements.</p><h2>Accuracy</h2><p>We aim to keep information useful and transparent. Availability, pricing, schedules and event details can change.</p><h2>External services</h2><p>WhatsApp, email and any linked third-party services have their own terms and policies.</p></LegalPage>;
   else if (pathname === "/disclaimer") content = <LegalPage title="Disclaimer"><p>Visit Malindi provides destination guidance and concierge introductions. We do not currently process bookings, payments or availability through this website.</p><p>Always confirm details directly through the Visit Malindi concierge before making travel or financial decisions.</p></LegalPage>;
   else if (catalogueByRoute[pathname]) content = <ListingPage config={catalogueByRoute[pathname]} />;
-  else if (pathname.startsWith("/experience/")) content = <DetailPage type="experience" item={experiences.find((item) => item.slug === slugFromPath(pathname))} />;
-  else if (pathname.startsWith("/stay/")) content = <DetailPage type="stay" item={stays.find((item) => item.slug === slugFromPath(pathname))} />;
-  else if (pathname.startsWith("/eat-and-drink/")) content = <DetailPage type="food" item={foodGuides.find((item) => item.slug === slugFromPath(pathname))} />;
-  else if (pathname.startsWith("/nightlife/")) content = <DetailPage type="nightlife" item={nightlife.find((item) => item.slug === slugFromPath(pathname))} />;
-  else if (pathname.startsWith("/transfer/")) content = <DetailPage type="transfer" item={transfers.find((item) => item.slug === slugFromPath(pathname))} />;
-  else if (pathname.startsWith("/attraction/")) content = <DetailPage type="attraction" item={attractions.find((item) => item.slug === slugFromPath(pathname))} />;
-  else if (pathname.startsWith("/itinerary/")) content = <DetailPage type="itinerary" item={itineraries.find((item) => item.slug === slugFromPath(pathname))} />;
+  else if (pathname.startsWith("/experience/")) content = <ReusableDetailPage type="experience" item={experiences.find((item) => item.slug === slugFromPath(pathname))} experiences={experiences} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} ListingCard={ListingCard} NotFound={NotFound} />;
+  else if (pathname.startsWith("/stay/")) content = <ReusableDetailPage type="stay" item={stays.find((item) => item.slug === slugFromPath(pathname))} experiences={experiences} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} ListingCard={ListingCard} NotFound={NotFound} />;
+  else if (pathname.startsWith("/eat-and-drink/")) content = <ReusableDetailPage type="food" item={foodGuides.find((item) => item.slug === slugFromPath(pathname))} experiences={experiences} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} ListingCard={ListingCard} NotFound={NotFound} />;
+  else if (pathname.startsWith("/nightlife/")) content = <ReusableDetailPage type="nightlife" item={nightlife.find((item) => item.slug === slugFromPath(pathname))} experiences={experiences} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} ListingCard={ListingCard} NotFound={NotFound} />;
+  else if (pathname.startsWith("/transfer/")) content = <ReusableDetailPage type="transfer" item={transfers.find((item) => item.slug === slugFromPath(pathname))} experiences={experiences} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} ListingCard={ListingCard} NotFound={NotFound} />;
+  else if (pathname.startsWith("/attraction/")) content = <ReusableDetailPage type="attraction" item={attractions.find((item) => item.slug === slugFromPath(pathname))} experiences={experiences} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} ListingCard={ListingCard} NotFound={NotFound} />;
+  else if (pathname.startsWith("/itinerary/")) content = <ReusableDetailPage type="itinerary" item={itineraries.find((item) => item.slug === slugFromPath(pathname))} experiences={experiences} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} ListingCard={ListingCard} NotFound={NotFound} />;
+  else if (pathname.startsWith("/event/")) content = <ReusableDetailPage type="event" item={events.find((item) => item.slug === slugFromPath(pathname))} experiences={experiences} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} ListingCard={ListingCard} NotFound={NotFound} />;
   else content = <NotFound />;
 
   return <><Header onSearch={() => setSearchOpen(true)} />{content}<Footer /><FloatingWhatsApp />{searchOpen && <SearchOverlay onClose={() => setSearchOpen(false)} />}</>;
