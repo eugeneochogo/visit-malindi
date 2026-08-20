@@ -1,0 +1,232 @@
+Continue the Visit Malindi build.
+
+We have completed the foundation and scalable content architecture. Now build the actual core tourism catalogue using the existing architecture and MASTER-SPECIFICATION.md.
+
+Do not redesign the website or change its positioning.
+
+Visit Malindi remains a destination discovery and local travel concierge platform.
+
+The next priority is CONTENT DEPTH and DISCOVERY.
+
+Create and organize the following major sections properly:
+
+1. THINGS TO DO
+
+Create categories for:
+- Marine experiences
+- Boat trips
+- Snorkelling
+- Diving
+- Dolphin experiences
+- Fishing
+- Sunset cruises
+- Sandbank experiences
+- Water sports
+- Beach activities
+- Nature experiences
+- Wildlife
+- Culture & history
+- Adventure
+- Family activities
+- Couples/romantic experiences
+- Photography experiences
+- Wellness and relaxation
+
+2. EXCURSIONS
+
+Create a strong excursions catalogue covering destinations and experiences around:
+- Malindi
+- Watamu
+- Gede
+- Mida Creek
+- Arabuko Sokoke
+- Mambrui
+- Kilifi
+- Marafa
+- Mombasa
+- Tsavo
+- Other relevant Kenyan Coast day-trip destinations
+
+Each excursion should have its own detail page using the existing reusable detail-page system.
+
+3. PLACES TO VISIT
+
+Create a proper destination/attraction catalogue.
+
+Organize attractions by location:
+- Malindi
+- Watamu
+- Gede
+- Mambrui
+- Kilifi
+- Mombasa
+- Wider Kenyan Coast
+
+Include relevant attractions such as:
+- Malindi Marine National Park
+- Vasco da Gama Pillar
+- Malindi Museum
+- Portuguese Chapel
+- Malindi beaches
+- Silversands
+- Casuarina
+- Watamu Marine National Park
+- Mida Creek
+- Gede Ruins
+- Arabuko Sokoke Forest
+- Sabaki River
+- Mambrui
+- Marafa/Hell's Kitchen
+- Tsavo experiences
+
+Use factual, useful destination descriptions.
+
+Do not invent commercial information, prices, opening hours or unsupported claims.
+
+4. PLACES TO STAY
+
+Build the accommodation catalogue architecture with categories:
+- Hotels
+- Resorts
+- Villas
+- Apartments
+- Guesthouses
+- Boutique stays
+- Budget stays
+- Luxury stays
+- Beachfront stays
+
+Use only real listings that already exist in the project/specification.
+
+If real commercial information has not been supplied, create clearly marked content placeholders rather than inventing businesses.
+
+5. EAT & DRINK
+
+Create the catalogue structure for:
+- Restaurants
+- Cafes
+- Seafood
+- Local food
+- Fine dining
+- Beach restaurants
+- Bars
+- Casual dining
+
+Again, do not invent businesses.
+
+6. NIGHTLIFE
+
+Create:
+- Clubs
+- Bars
+- Lounges
+- Beach nightlife
+- Live music
+- DJ events
+- Parties
+- Entertainment
+
+Keep the section useful for visitors without making unsupported claims.
+
+7. TRANSFERS
+
+Create the full transfer catalogue:
+
+Airport:
+- Malindi Airport → hotel
+- Hotel → Malindi Airport
+- Mombasa Airport → Malindi
+- Mombasa Airport → Watamu
+- Watamu → Mombasa Airport
+- Malindi → Mombasa Airport
+
+Intercity:
+- Malindi ↔ Watamu
+- Malindi ↔ Mombasa
+- Malindi ↔ Kilifi
+- Malindi ↔ Mambrui
+- Malindi ↔ Lamu
+- Other relevant routes
+
+SGR:
+- Mombasa SGR → Malindi
+- Mombasa SGR → Watamu
+- Malindi → Mombasa SGR
+- Watamu → Mombasa SGR
+
+Create individual service/detail pages for these routes.
+
+Do not implement online payment or automatic booking.
+
+8. WHATSAPP
+
+Every excursion, attraction, accommodation, restaurant, nightlife listing and transfer service must have a clear WhatsApp CTA.
+
+WhatsApp number:
++254791562000
+
+Use:
+https://wa.me/254791562000
+
+Where appropriate, create contextual pre-filled messages.
+
+9. DISCOVERY
+
+Improve the category pages so visitors can browse naturally.
+
+Add appropriate:
+- Search
+- Category filters
+- Location filters
+- Experience-type filters
+- Featured items
+- Related experiences
+- Related places
+- Related accommodation
+
+Do not overcomplicate the UI.
+
+10. SEO STRUCTURE
+
+Ensure every major listing/detail page has:
+- Unique page title
+- Meta description
+- Proper H1
+- Semantic headings
+- Clean URL
+- Internal links
+- Breadcrumbs where appropriate
+
+11. IMPORTANT PRODUCT RULE
+
+Visit Malindi is NOT primarily a directory of "verified listings".
+
+It is a destination discovery and concierge platform.
+
+The visitor journey remains:
+
+DISCOVER
+→ EXPLORE
+→ CHOOSE
+→ ENQUIRE
+→ WHATSAPP
+→ VISIT MALINDI ASSISTS
+
+Do not change this positioning.
+
+12. QUALITY
+
+Use the existing design system and components.
+
+Do not rebuild the homepage unnecessarily.
+
+Do not introduce:
+- Payments
+- Customer accounts
+- Partner accounts
+- Partner dashboards
+- Booking engines
+- Vendor APIs
+- Complex backend systems
+
+Complete this phase, test all routes and links, and fix any errors before finishing.

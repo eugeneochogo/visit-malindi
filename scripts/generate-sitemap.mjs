@@ -1,4 +1,4 @@
-import { attractions, events, experiences, foodGuides, itineraries, nightlife, stays, transfers } from "../src/data.js";
+import { attractions, events, excursions, experiences, foodGuides, itineraries, nightlife, stays, transfers } from "../src/data.js";
 import { writeFile } from "node:fs/promises";
 
 const origin = "https://visitmalindi.co.ke";
@@ -7,6 +7,7 @@ const publicRoutes = [
   "/things-to-do",
   "/things-to-do-in-malindi",
   "/things-to-do-in-watamu",
+  "/excursions",
   "/malindi-excursions",
   "/places-to-stay",
   "/hotels-in-malindi",
@@ -30,6 +31,7 @@ const publicRoutes = [
 
 const listingRoutes = [
   ...experiences.map((item) => `/experience/${item.slug}`),
+  ...excursions.map((item) => `/excursion/${item.slug}`),
   ...stays.map((item) => `/stay/${item.slug}`),
   ...foodGuides.map((item) => `/eat-and-drink/${item.slug}`),
   ...nightlife.map((item) => `/nightlife/${item.slug}`),

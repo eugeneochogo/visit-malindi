@@ -4,6 +4,7 @@
   <url><loc>https://visitmalindi.co.ke/things-to-do</loc></url>
   <url><loc>https://visitmalindi.co.ke/things-to-do-in-malindi</loc></url>
   <url><loc>https://visitmalindi.co.ke/things-to-do-in-watamu</loc></url>
+  <url><loc>https://visitmalindi.co.ke/excursions</loc></url>
   <url><loc>https://visitmalindi.co.ke/malindi-excursions</loc></url>
   <url><loc>https://visitmalindi.co.ke/places-to-stay</loc></url>
   <url><loc>https://visitmalindi.co.ke/hotels-in-malindi</loc></url>
@@ -29,34 +30,81 @@
   <url><loc>https://visitmalindi.co.ke/experience/gede-ruins</loc></url>
   <url><loc>https://visitmalindi.co.ke/experience/dhow-sailing</loc></url>
   <url><loc>https://visitmalindi.co.ke/experience/turtle-related-experiences</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/snorkelling-on-the-coast</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/diving-on-the-coast</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/dolphin-experiences</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/sunset-cruises</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/sandbank-experiences</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/water-sports</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/beach-activities</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/wildlife-on-the-coast</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/family-coast-day</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/couples-coast-day</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/coast-photography</loc></url>
+  <url><loc>https://visitmalindi.co.ke/experience/wellness-and-relaxation</loc></url>
   <url><loc>https://visitmalindi.co.ke/experience/horse-riding</loc></url>
   <url><loc>https://visitmalindi.co.ke/experience/deep-sea-fishing</loc></url>
+  <url><loc>https://visitmalindi.co.ke/excursion/malindi-coast-excursion</loc></url>
+  <url><loc>https://visitmalindi.co.ke/excursion/watamu-and-mida-creek</loc></url>
+  <url><loc>https://visitmalindi.co.ke/excursion/gede-and-arabuko-sokoke</loc></url>
+  <url><loc>https://visitmalindi.co.ke/excursion/mambrui-excursion</loc></url>
+  <url><loc>https://visitmalindi.co.ke/excursion/kilifi-excursion</loc></url>
+  <url><loc>https://visitmalindi.co.ke/excursion/marafa-hells-kitchen</loc></url>
+  <url><loc>https://visitmalindi.co.ke/excursion/mombasa-day-trip</loc></url>
+  <url><loc>https://visitmalindi.co.ke/excursion/tsavo-coast-extension</loc></url>
   <url><loc>https://visitmalindi.co.ke/stay/beachfront-stays</loc></url>
   <url><loc>https://visitmalindi.co.ke/stay/boutique-stays</loc></url>
   <url><loc>https://visitmalindi.co.ke/stay/family-stays</loc></url>
+  <url><loc>https://visitmalindi.co.ke/eat-and-drink/restaurants-in-malindi</loc></url>
   <url><loc>https://visitmalindi.co.ke/eat-and-drink/seafood</loc></url>
   <url><loc>https://visitmalindi.co.ke/eat-and-drink/swahili-food</loc></url>
   <url><loc>https://visitmalindi.co.ke/eat-and-drink/cafes</loc></url>
-  <url><loc>https://visitmalindi.co.ke/eat-and-drink/romantic-dining</loc></url>
-  <url><loc>https://visitmalindi.co.ke/nightlife/clubs-djs</loc></url>
+  <url><loc>https://visitmalindi.co.ke/eat-and-drink/fine-dining</loc></url>
+  <url><loc>https://visitmalindi.co.ke/eat-and-drink/beach-restaurants</loc></url>
+  <url><loc>https://visitmalindi.co.ke/eat-and-drink/bars-on-the-coast</loc></url>
+  <url><loc>https://visitmalindi.co.ke/eat-and-drink/casual-dining</loc></url>
+  <url><loc>https://visitmalindi.co.ke/nightlife/clubs-in-malindi</loc></url>
+  <url><loc>https://visitmalindi.co.ke/nightlife/nightlife-bars</loc></url>
   <url><loc>https://visitmalindi.co.ke/nightlife/beach-lounges</loc></url>
+  <url><loc>https://visitmalindi.co.ke/nightlife/beach-nightlife</loc></url>
   <url><loc>https://visitmalindi.co.ke/nightlife/live-music</loc></url>
-  <url><loc>https://visitmalindi.co.ke/nightlife/beach-parties</loc></url>
+  <url><loc>https://visitmalindi.co.ke/nightlife/dj-events</loc></url>
+  <url><loc>https://visitmalindi.co.ke/nightlife/parties</loc></url>
+  <url><loc>https://visitmalindi.co.ke/nightlife/evening-entertainment</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/malindi-airport-to-hotel</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/hotel-to-malindi-airport</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/mombasa-airport-to-malindi</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/mombasa-airport-to-watamu</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/watamu-to-mombasa-airport</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-mombasa-airport</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/sgr-to-malindi</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/mombasa-sgr-to-watamu</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-mombasa-sgr</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/watamu-to-mombasa-sgr</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-watamu</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-mombasa</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-kilifi</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-mambrui</loc></url>
+  <url><loc>https://visitmalindi.co.ke/transfer/malindi-to-lamu</loc></url>
   <url><loc>https://visitmalindi.co.ke/transfer/private-car</loc></url>
+  <url><loc>https://visitmalindi.co.ke/attraction/malindi-marine-national-park</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/malindi-beaches</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/vasco-da-gama-pillar</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/malindi-museum</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/portuguese-chapel</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/silversands</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/casuarina</loc></url>
+  <url><loc>https://visitmalindi.co.ke/attraction/watamu-marine-national-park</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/watamu-beaches</loc></url>
+  <url><loc>https://visitmalindi.co.ke/attraction/mida-creek</loc></url>
+  <url><loc>https://visitmalindi.co.ke/attraction/gede-ruins</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/arabuko-sokoke-forest</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/sabaki-river</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/mambrui</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/kilifi</loc></url>
+  <url><loc>https://visitmalindi.co.ke/attraction/marafa-hells-kitchen</loc></url>
+  <url><loc>https://visitmalindi.co.ke/attraction/mombasa-day-visit</loc></url>
+  <url><loc>https://visitmalindi.co.ke/attraction/tsavo-experiences</loc></url>
   <url><loc>https://visitmalindi.co.ke/attraction/malindi-old-town</loc></url>
   <url><loc>https://visitmalindi.co.ke/itinerary/1-day-in-malindi</loc></url>
   <url><loc>https://visitmalindi.co.ke/itinerary/2-days-in-malindi</loc></url>

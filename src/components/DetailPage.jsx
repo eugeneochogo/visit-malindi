@@ -2,17 +2,21 @@ import Icon from "./Icon";
 import SmartImage from "./SmartImage";
 import { navigate } from "../utils";
 
-export default function DetailPage({ type, item, experiences, WhatsAppButton, SectionHeading, ListingCard, NotFound }) {
+export default function DetailPage({ type, item, experiences, relatedItems, relatedType, WhatsAppButton, SectionHeading, ListingCard, NotFound }) {
   if (!item) return <NotFound />;
-  const singular = type === "experience" ? "experience" : type === "stay" ? "accommodation" : type === "transfer" ? "transfer" : type === "nightlife" ? "nightlife" : type === "itinerary" ? "itinerary" : type === "event" ? "event" : "place";
-  const cta = { experience: "Ask About This Experience", stay: "Ask About Availability", transfer: "Arrange This Transfer", nightlife: "Ask What's Happening Tonight", itinerary: "Plan My Trip", event: "Ask About This Event", food: "Ask About This Place", attraction: "Ask About This Place" }[type] || "Talk to a Local";
+  const singular = type === "experience" ? "experience" : type === "excursion" ? "excursion" : type === "stay" ? "accommodation" : type === "transfer" ? "transfer" : type === "nightlife" ? "nightlife" : type === "itinerary" ? "itinerary" : type === "event" ? "event" : "place";
+  const cta = { experience: "Ask About This Experience", excursion: "Ask About This Excursion", stay: "Ask About Availability", transfer: "Arrange This Transfer", nightlife: "Ask What's Happening Tonight", itinerary: "Plan My Trip", event: "Ask About This Event", food: "Ask About This Place", attraction: "Ask About This Place" }[type] || "Talk to a Local";
   const messageName = item.route || item.name;
   const gallery = item.images?.length ? item.images : item.gallery?.length ? item.gallery : item.image ? [item.image] : [];
   const usefulInfo = item.usefulInfo || [];
-  const related = experiences.filter((experience) => experience.id !== item.id).slice(0, 3);
+  const related = (relatedItems || experiences).filter((entry) => entry.id !== item.id).slice(0, 3);
+  const cardType = relatedType || type;
+  const categoryPath = { experience: "/things-to-do", excursion: "/excursions", stay: "/places-to-stay", food: "/eat-and-drink", nightlife: "/nightlife", transfer: "/transfers", attraction: "/places-to-visit", itinerary: "/itineraries", event: "/whats-on" }[type] || "/things-to-do";
+  const categoryLabel = { experience: "Things to do", excursion: "Excursions", stay: "Places to stay", food: "Eat & drink", nightlife: "Nightlife", transfer: "Transfers", attraction: "Places to visit", itinerary: "Itineraries", event: "What's on" }[type] || "Explore";
 
   return (
     <main className="detail-page">
+      <nav className="breadcrumbs page-width" aria-label="Breadcrumb"><a href="/" onClick={(event) => { event.preventDefault(); navigate("/"); }}>Home</a><span>/</span><a href={categoryPath} onClick={(event) => { event.preventDefault(); navigate(categoryPath); }}>{categoryLabel}</a><span>/</span><span aria-current="page">{messageName}</span></nav>
       <div className="detail-hero page-width">
         <div className="detail-hero-image"><SmartImage src={item.image} alt={messageName} /></div>
         <div className="detail-hero-copy">
@@ -39,7 +43,7 @@ export default function DetailPage({ type, item, experiences, WhatsAppButton, Se
         <aside className="detail-aside"><div className="aside-card"><span className="eyebrow">Plan with a local</span><h3>Have a question about this {singular}?</h3><p>Tell us what you are looking for and we will help you take the next step.</p><WhatsAppButton type={type} name={messageName} label={cta} context={type === "event" ? `${item.venue ? `Venue: ${item.venue}\n` : ""}${item.date ? `Date: ${item.date}\n` : ""}${item.startTime ? `Starts: ${item.startTime}` : ""}`.trim() : ""} /><a className="text-link" href="/plan-my-trip" onClick={(event) => { event.preventDefault(); navigate("/plan-my-trip"); }}>Build a bigger plan <Icon name="arrow" size={15} /></a></div></aside>
       </div>
 
-      <section className="section page-width related-section"><SectionHeading eyebrow="Keep exploring" title="More for your trip" action={<a className="text-link text-link-dark" href="/things-to-do" onClick={(event) => { event.preventDefault(); navigate("/things-to-do"); }}>Back to Explore <Icon name="arrow" size={15} /></a>} /><div className="listing-grid">{related.map((experience) => <ListingCard key={experience.id} item={experience} type="experience" />)}</div></section>
+      <section className="section page-width related-section"><SectionHeading eyebrow="Keep exploring" title="More for your trip" action={<a className="text-link text-link-dark" href={categoryPath} onClick={(event) => { event.preventDefault(); navigate(categoryPath); }}>Back to {categoryLabel} <Icon name="arrow" size={15} /></a>} /><div className="listing-grid">{related.map((entry) => <ListingCard key={entry.id} item={entry} type={cardType} />)}</div></section>
     </main>
   );
 }

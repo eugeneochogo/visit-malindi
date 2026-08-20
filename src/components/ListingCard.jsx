@@ -9,6 +9,7 @@ const pathMap = {
   nightlife: "nightlife",
   transfer: "transfer",
   attraction: "attraction",
+  excursion: "excursion",
   itinerary: "itinerary",
   event: "event",
 };
