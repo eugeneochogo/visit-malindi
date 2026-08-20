@@ -8,13 +8,19 @@ export function whatsappLink(message = "Hello Visit Malindi, I'd like some help 
 
 export function enquiryMessage(type, name, context = "") {
   const intro = "Hello Visit Malindi 👋";
+  const nightlifeLocation = name === "Malindi" || name === "Watamu" || name === "the coast" ? name : "";
+  const nightlifeLocationLabel = nightlifeLocation === "the coast" ? "on the coast" : nightlifeLocation ? `in ${nightlifeLocation}` : "";
   const messages = {
     experience: `${intro}\n\nI'm interested in ${name}.\n\nDate:\nNumber of people:\n\nPlease share current details and availability.`,
     excursion: `${intro}\n\nI'm interested in the ${name} excursion.\n\nDate:\nNumber of people:\n\nPlease share the current options and help me plan the day.`,
     stay: `${intro}\n\nI'm interested in ${name}.\n\nCheck-in:\nCheck-out:\nNumber of guests:\n\nPlease share availability and rates.`,
     transfer: `${intro}\n\nI'd like to arrange:\n${name}\n\nDate:\nNumber of passengers:\nPickup/arrival time:\n\nPlease share the available options and price.`,
-    nightlife: `${intro}\n\nWhat's happening in Malindi tonight?\n\nWe're interested in: ${name}\n\nPlease recommend some options.`,
-    food: `${intro}\n\nI'd like a recommendation for ${name}.\n\nDate:\nNumber of people:\n\nPlease share the best current options and any useful details.`,
+    nightlife: nightlifeLocation
+      ? `Hello Visit Malindi, I would like help planning my night out ${nightlifeLocationLabel}.\n\nDate:\nNumber of people:\n\nPlease help with where to go tonight, restaurant and nightlife plans, reservations, transport and local guidance where available.`
+      : name
+      ? `Hello Visit Malindi, I would like help planning a night out around ${name}.\n\nDate:\nNumber of people:\n\nPlease help with current venue details, dinner plans, reservations, transport and local guidance where available.`
+      : "Hello Visit Malindi, I would like help planning my night out in Malindi.\n\nDate:\nNumber of people:\n\nPlease help with where to go tonight, restaurant and nightlife plans, reservations, transport and local guidance where available.",
+    food: `${intro}\n\nI would like to book / enquire about ${name}.\n\nDate:\nPreferred time:\nNumber of people:\n\nPlease help with a table request and confirm the current venue details.`,
     attraction: `${intro}\n\nI'd like to visit ${name}.\n\nDate:\nNumber of people:\n\nPlease share the best way to include it in my trip.`,
     event: `${intro}\n\nI'd like to know more about ${name}.\n\nPlease share the latest event details and options.`,
     itinerary: `${intro}\n\nI'd like help with the ${name} itinerary.\n\nPlease help me shape the best plan for my trip.`,
