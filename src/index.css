@@ -104,6 +104,9 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
 .listing-image-wrap { position: relative; display: block; aspect-ratio: 1.15 / 1; overflow: hidden; background: var(--sand-deep); }
 .listing-image-wrap img, .listing-image-wrap .image-fallback { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
 .listing-card:hover .listing-image-wrap img { transform: scale(1.045); }
+.listing-relationship, .listing-image-note { position: absolute; left: 12px; padding: 7px 9px; color: #fff; font: 700 9px/1.1 var(--display); letter-spacing: .07em; text-transform: uppercase; }
+.listing-relationship { top: 12px; background: var(--teal); }
+.listing-image-note { bottom: 12px; background: rgba(16, 47, 56, .76); }
 .card-arrow { position: absolute; right: 14px; bottom: 14px; display: grid; place-items: center; width: 37px; height: 37px; border-radius: 50%; background: var(--cream); color: var(--ink); opacity: 0; transform: translateY(5px); transition: opacity .2s, transform .2s; }
 .listing-card:hover .card-arrow { opacity: 1; transform: translateY(0); }
 .listing-card-body { padding: 17px 2px 0; }
@@ -165,6 +168,8 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
 .location-filter-row { margin: 0; padding-bottom: 0; border-bottom: 0; }
 .experience-type-filter { margin: -17px 0 45px; }
 .experience-type-filter .eyebrow { margin-bottom: 12px; }
+.relationship-filter { margin: -17px 0 45px; }
+.relationship-filter .eyebrow { margin-bottom: 12px; }
 .filter-chip, .interest-chip { padding: 10px 16px; border: 1px solid var(--line); border-radius: 30px; background: transparent; color: var(--ink-soft); font: 600 11px var(--display); transition: background .2s, color .2s, border .2s; }
 .filter-chip:hover, .filter-chip.active, .interest-chip:hover, .interest-chip.selected { border-color: var(--teal); background: var(--teal); color: #fff; }
 .trust-note { display: flex; align-items: center; gap: 13px; margin-top: 40px; padding: 18px 20px; border: 1px solid var(--line); color: var(--muted); }
@@ -184,9 +189,11 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
 .breadcrumbs a:hover { color: var(--coral); }
 .breadcrumbs span:last-child { overflow: hidden; max-width: 260px; text-overflow: ellipsis; white-space: nowrap; }
 .detail-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); min-height: 560px; background: var(--sand); }
-.detail-hero-image { min-height: 560px; overflow: hidden; }
+.detail-hero-image { position: relative; min-height: 560px; overflow: hidden; }
 .detail-hero-image img { width: 100%; height: 100%; object-fit: cover; }
+.detail-image-caption { position: absolute; right: 18px; bottom: 18px; left: 18px; padding: 10px 12px; background: rgba(16, 47, 56, .78); color: rgba(255,255,255,.88); font-size: 11px; line-height: 1.35; }
 .detail-hero-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 65px clamp(35px, 6vw, 90px); }
+.detail-relationship { display: inline-flex; margin-bottom: 15px; padding: 8px 10px; background: var(--teal); color: #fff; font: 700 10px/1 var(--display); letter-spacing: .09em; text-transform: uppercase; }
 .detail-hero-copy h1 { margin: 0 0 14px; font: 600 clamp(42px, 5vw, 68px)/.98 var(--display); letter-spacing: -.08em; }
 .detail-hero-copy > p:not(.detail-location) { max-width: 440px; margin: 0 0 28px; color: var(--muted); }
 .detail-location { display: flex; align-items: center; gap: 5px; margin: 0 0 20px; color: var(--teal); font-size: 13px; }
@@ -208,6 +215,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
 .detail-audience, .detail-expectations, .detail-discovery-links { max-width: 680px; margin-top: 52px; padding-top: 35px; border-top: 1px solid var(--line); }
 .detail-audience > div { display: flex; flex-wrap: wrap; gap: 9px; }
 .detail-audience > div span { padding: 9px 13px; border: 1px solid var(--line); border-radius: 24px; color: var(--teal); font: 700 11px var(--display); }
+.detail-audience p { margin: 0; color: var(--ink-soft); font-size: 14px; }
 .detail-expectations ul { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
 .detail-expectations li { position: relative; padding-left: 19px; color: var(--ink-soft); font-size: 14px; }
 .detail-expectations li::before { position: absolute; top: .62em; left: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); content: ""; }

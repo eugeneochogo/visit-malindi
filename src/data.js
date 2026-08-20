@@ -456,6 +456,120 @@ const excursionEntries = [
 
 const stayEntries = [
   {
+    id: "whitebeach-residence",
+    slug: "whitebeach-residence",
+    name: "Whitebeach Residence",
+    category: "Residence",
+    location: "Location to confirm",
+    image: photos.beach,
+    imageIsIllustrative: true,
+    imageCaption: "Illustrative coastal image — confirm current property details with Visit Malindi.",
+    relationship: "Managed by Visit Malindi",
+    description: "A Visit Malindi-managed property profile. Ask us to confirm the current property details, dates and best fit for your stay.",
+    amenities: [],
+    suitableFor: [],
+    suitableForNote: "Confirm the best fit for your group with Visit Malindi.",
+    tags: ["Residences", "Managed accommodation"],
+    usefulInfo: ["Current property details, rates and availability are confirmed through WhatsApp.", "Website and social links will be added when approved details are supplied.", "This website does not process online bookings or payments."],
+  },
+  {
+    id: "via-lattea-residence",
+    slug: "via-lattea-residence",
+    name: "Via Lattea Residence",
+    category: "Residence",
+    location: "Location to confirm",
+    image: photos.sunset,
+    imageIsIllustrative: true,
+    imageCaption: "Illustrative coastal image — confirm current property details with Visit Malindi.",
+    relationship: "Managed by Visit Malindi",
+    description: "A Visit Malindi-managed property profile. Ask us to confirm the current property details, dates and best fit for your stay.",
+    amenities: [],
+    suitableFor: [],
+    suitableForNote: "Confirm the best fit for your group with Visit Malindi.",
+    tags: ["Residences", "Managed accommodation"],
+    usefulInfo: ["Current property details, rates and availability are confirmed through WhatsApp.", "Website and social links will be added when approved details are supplied.", "This website does not process online bookings or payments."],
+  },
+  {
+    id: "casuarina-villas",
+    slug: "villas-in-casuarina-malindi",
+    name: "Villas in Casuarina, Malindi",
+    category: "Villas",
+    location: "Casuarina, Malindi",
+    image: photos.beach,
+    imageIsIllustrative: true,
+    imageCaption: "Illustrative coastal image — confirm current property details with Visit Malindi.",
+    relationship: "Visit Malindi Partner",
+    description: "A partner accommodation guide for visitors looking for villa options in Casuarina, Malindi. Ask Visit Malindi for current property choices and details.",
+    amenities: [],
+    suitableFor: [],
+    suitableForNote: "Tell us about your group and we will help you ask the right questions.",
+    tags: ["Villas", "Partner accommodation"],
+  },
+  {
+    id: "hotels-in-malindi",
+    slug: "hotels-in-malindi",
+    name: "Hotels in Malindi",
+    category: "Hotel",
+    location: "Malindi",
+    image: photos.hero,
+    imageIsIllustrative: true,
+    imageCaption: "Illustrative coastal image — confirm current property details with Visit Malindi.",
+    relationship: "Visit Malindi Partner",
+    description: "A partner accommodation guide for hotels in Malindi. Share your dates, group and preferred feel so Visit Malindi can point you in the right direction.",
+    amenities: [],
+    suitableFor: [],
+    suitableForNote: "Options can be matched to your group and plans after a direct enquiry.",
+    tags: ["Hotels", "Partner accommodation"],
+  },
+  {
+    id: "boutique-hotels",
+    slug: "boutique-hotels",
+    name: "Boutique hotels",
+    category: "Boutique Hotel",
+    location: "Location to confirm",
+    image: photos.sunset,
+    imageIsIllustrative: true,
+    imageCaption: "Illustrative coastal image — confirm current property details with Visit Malindi.",
+    relationship: "Visit Malindi Partner",
+    description: "A partner accommodation guide for boutique hotel options. Ask Visit Malindi about current properties, locations and availability.",
+    amenities: [],
+    suitableFor: [],
+    suitableForNote: "Confirm location and the best match for your stay through WhatsApp.",
+    tags: ["Hotels", "Boutique Stays", "Partner accommodation"],
+  },
+  {
+    id: "luxury-properties",
+    slug: "luxury-properties",
+    name: "Luxury properties",
+    category: "Luxury Property",
+    location: "Location to confirm",
+    image: photos.ocean,
+    imageIsIllustrative: true,
+    imageCaption: "Illustrative coastal image — confirm current property details with Visit Malindi.",
+    relationship: "Visit Malindi Partner",
+    description: "A partner accommodation guide for luxury property options on the coast. Ask Visit Malindi to confirm current choices and details.",
+    amenities: [],
+    suitableFor: [],
+    suitableForNote: "Tell us what matters to you before we suggest a direction.",
+    tags: ["Luxury Stays", "Partner accommodation"],
+  },
+  {
+    id: "watamu-accommodation",
+    slug: "accommodation-in-watamu",
+    name: "Accommodation in Watamu",
+    category: "Accommodation Facility",
+    location: "Watamu",
+    image: photos.mangrove,
+    imageIsIllustrative: true,
+    imageCaption: "Illustrative coastal image — confirm current property details with Visit Malindi.",
+    relationship: "Visit Malindi Partner",
+    description: "A partner accommodation guide for facilities in Watamu. Ask Visit Malindi for current options based on your dates and plans.",
+    amenities: [],
+    suitableFor: [],
+    suitableForNote: "Confirm the property, location and best fit for your group through WhatsApp.",
+    tags: ["Hotels", "Guesthouses", "Partner accommodation"],
+  },
+  {
     id: "beachfront-stays",
     slug: "beachfront-stays",
     name: "Beachfront stays in Malindi",
@@ -465,6 +579,9 @@ const stayEntries = [
     description: "Wake up close to the Indian Ocean. Tell us your dates, group and preferred feel, and we will help you explore suitable beachfront options.",
     amenities: ["Beach access", "Relaxed coastal setting", "Options for couples and families"],
     tags: ["Hotels", "Resorts", "Beachfront Stays", "Luxury Stays"],
+    relationship: "General accommodation",
+    imageIsIllustrative: true,
+    imageCaption: "Illustrative coastal image — confirm current property details with Visit Malindi.",
   },
   {
     id: "boutique-stays",
@@ -476,6 +593,9 @@ const stayEntries = [
     description: "Smaller, characterful places to stay for travellers who want a more personal base in Malindi.",
     amenities: ["Local character", "Personalised recommendations", "Central coastal location"],
     tags: ["Hotels", "Boutique Stays"],
+    relationship: "General accommodation",
+    imageIsIllustrative: true,
+    imageCaption: "Illustrative coastal image — confirm current property details with Visit Malindi.",
   },
   {
     id: "family-stays",
@@ -487,6 +607,9 @@ const stayEntries = [
     description: "A starting point for finding the right space for a family holiday, from easy beach days to a base for exploring.",
     amenities: ["Family-friendly options", "Flexible locations", "Local trip support"],
     tags: ["Hotels", "Apartments", "Guesthouses", "Budget Stays"],
+    relationship: "General accommodation",
+    imageIsIllustrative: true,
+    imageCaption: "Illustrative coastal image — confirm current property details with Visit Malindi.",
   },
 ];
 
@@ -652,9 +775,37 @@ const withListingFields = (item) => ({
   socialUrl: item.socialUrl || null,
 });
 
+const stayPlanningLinks = [
+  { label: "Places to visit", path: "/places-to-visit" },
+  { label: "Things to do", path: "/things-to-do" },
+  { label: "Excursions", path: "/excursions" },
+  { label: "Eat & drink", path: "/eat-and-drink" },
+  { label: "Transfers", path: "/transfers" },
+  { label: "Itineraries", path: "/itineraries" },
+];
+
+function stayNearbyPlaces(location = "") {
+  if (location.includes("Watamu")) return [{ label: "Watamu beaches", path: "/attraction/watamu-beaches" }, { label: "Mida Creek", path: "/attraction/mida-creek" }];
+  if (location.includes("Casuarina")) return [{ label: "Casuarina", path: "/attraction/casuarina" }, { label: "Malindi beaches", path: "/attraction/malindi-beaches" }];
+  if (location.includes("Malindi")) return [{ label: "Malindi beaches", path: "/attraction/malindi-beaches" }, { label: "Malindi Old Town", path: "/attraction/malindi-old-town" }];
+  return [];
+}
+
+function enrichStay(item) {
+  return {
+    ...item,
+    relationship: item.relationship || "General accommodation",
+    fullDescription: item.fullDescription || `${item.description} This is a destination guide and concierge introduction, not a verified booking listing.`,
+    whatToExpect: item.whatToExpect || ["A conversation about your dates, group and preferred location", "Current property details, rates and availability confirmed through WhatsApp", "A flexible starting point with no online booking or payment on this site"],
+    nearbyPlaces: item.nearbyPlaces || stayNearbyPlaces(item.location),
+    planningLinks: item.planningLinks || stayPlanningLinks,
+    imageCaption: item.imageCaption || "Confirm current accommodation details with Visit Malindi.",
+  };
+}
+
 export const experiences = experienceEntries.map(enrichDiscoveryItem).map(withListingFields);
 export const excursions = excursionEntries.map(enrichDiscoveryItem).map(withListingFields);
-export const stays = stayEntries.map(withListingFields);
+export const stays = stayEntries.map(enrichStay).map(withListingFields);
 export const foodGuides = foodEntries.map(withListingFields);
 export const nightlife = nightlifeEntries.map(withListingFields);
 export const transfers = transferEntries.map(withListingFields);

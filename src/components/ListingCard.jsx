@@ -22,7 +22,9 @@ export default function ListingCard({ item, type, showEnquiry = true }) {
   return (
     <article className="listing-card">
       <a className="listing-image-wrap" href={path} onClick={(event) => { event.preventDefault(); navigate(path); }}>
-        <SmartImage src={item.image} alt={title} />
+        <SmartImage src={item.image} alt={item.imageIsIllustrative ? "Illustrative coastal accommodation image" : title} />
+        {item.relationship && <span className="listing-relationship">{item.relationship}</span>}
+        {item.imageIsIllustrative && <span className="listing-image-note">Illustrative image</span>}
         <span className="card-arrow"><Icon name="arrow" size={16} /></span>
       </a>
       <div className="listing-card-body">
