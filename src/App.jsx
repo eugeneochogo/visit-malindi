@@ -95,8 +95,7 @@ function Header({ onSearch }) {
     <header className="site-header">
       <div className="header-inner">
         <a className="brand" href="/" onClick={(event) => { event.preventDefault(); go("/"); }}>
-          <span className="brand-mark">VM</span>
-          <span className="brand-name">Visit <strong>Malindi</strong></span>
+          <img className="brand-logo" src="/visit-malindi-logo.svg" alt="Visit Malindi" />
         </a>
         <nav className={`main-nav ${open ? "is-open" : ""}`} aria-label="Main navigation">
           <div className="mobile-nav-heading"><span>Explore the coast</span><button className="icon-button" aria-label="Close menu" onClick={() => setOpen(false)}><Icon name="close" /></button></div>
@@ -118,7 +117,7 @@ function Footer() {
     <footer className="site-footer">
       <div className="footer-top">
         <div className="footer-brand">
-          <a className="brand brand-light" href="/" onClick={(event) => { event.preventDefault(); navigate("/"); }}><span className="brand-mark">VM</span><span className="brand-name">Visit <strong>Malindi</strong></span></a>
+          <a className="brand brand-light" href="/" onClick={(event) => { event.preventDefault(); navigate("/"); }}><img className="brand-logo" src="/visit-malindi-logo.svg" alt="Visit Malindi" /></a>
           <p>Discover the Coast Your Way.</p>
           <WhatsAppButton label="Talk to a Local" />
         </div>
