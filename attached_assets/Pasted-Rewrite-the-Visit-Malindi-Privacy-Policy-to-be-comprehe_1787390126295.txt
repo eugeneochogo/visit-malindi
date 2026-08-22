@@ -1,0 +1,139 @@
+Rewrite the Visit Malindi Privacy Policy to be comprehensive, accurate and professional.
+
+Visit Malindi is a destination guide and local concierge service for Malindi and Watamu. We help visitors discover and enquire about accommodation, restaurants, nightlife, excursions, activities, itineraries and transport.
+
+We may receive enquiries through the website, WhatsApp, phone, email and other communication channels.
+
+The Privacy Policy must accurately explain:
+
+1. WHO WE ARE
+- Visit Malindi
+- Website: visitmalindi.co.ke
+- Explain that we are a destination discovery and concierge service, not necessarily the direct provider of every accommodation, restaurant, activity or transport service listed.
+
+2. INFORMATION WE MAY COLLECT
+Only collect information reasonably necessary for the service, including:
+- Name
+- Phone/WhatsApp number
+- Email address
+- Travel dates
+- Number of travellers
+- Accommodation preferences
+- Transport requirements
+- Excursion/activity interests
+- Restaurant or nightlife enquiries
+- Itinerary preferences
+- Messages and information voluntarily provided by visitors
+- Technical information such as IP address, browser/device information and website usage data where applicable.
+
+Do NOT claim that we collect information that the website does not actually collect.
+
+3. HOW WE USE INFORMATION
+Explain that information may be used to:
+- Respond to enquiries
+- Arrange accommodation enquiries
+- Assist with restaurant and nightlife requests
+- Arrange transport enquiries
+- Assist with excursions and activities
+- Build or customise itineraries
+- Communicate about requested services
+- Connect visitors with relevant accommodation, restaurants, activity providers, transport providers or other service partners where necessary to fulfil a request
+- Improve the website and visitor experience
+- Maintain website security
+- Meet legal obligations.
+
+4. WHATSAPP CONCIERGE
+Clearly explain that visitors may voluntarily contact Visit Malindi through WhatsApp.
+Explain that information shared through WhatsApp is used to respond to the visitor's enquiry and coordinate requested services.
+Do not claim that WhatsApp is operated or controlled by Visit Malindi.
+Make it clear that WhatsApp has its own privacy policies and terms.
+
+5. THIRD-PARTY SERVICE PROVIDERS
+Explain that when a visitor asks Visit Malindi to arrange accommodation, transport, dining, nightlife or activities, relevant information may need to be shared with the relevant provider to fulfil the request.
+
+Make clear that:
+- We only share information reasonably necessary for the requested service.
+- Third-party providers have their own privacy practices.
+- Visit Malindi is not responsible for the independent privacy practices of third parties.
+
+6. ACCOMMODATION
+Explain that Visit Malindi may promote or manage enquiries for selected accommodation properties and may connect visitors with accommodation providers.
+Do not imply that Visit Malindi owns every property listed on the website.
+
+7. BOOKINGS AND PAYMENTS
+Accurately explain that the website does not currently process automated online bookings or payments unless a specific feature is actually implemented.
+Where enquiries are handled manually, availability, pricing and final arrangements are confirmed separately.
+
+Do not claim that Visit Malindi stores card or payment information if it does not.
+
+8. COOKIES AND ANALYTICS
+Explain cookies and similar technologies in plain language.
+Only mention analytics, tracking, advertising pixels or marketing tools that actually exist in the website.
+Do not invent Google Analytics, Meta Pixel, advertising cookies or other tracking systems.
+
+9. DATA RETENTION
+Explain that personal information is retained only for as long as reasonably necessary for the purpose for which it was collected, legitimate business purposes, dispute resolution, security and legal obligations.
+Avoid inventing a fixed retention period unless one actually exists.
+
+10. DATA SECURITY
+Explain reasonable technical and organisational measures used to protect personal information.
+Do not make unrealistic guarantees such as "100% secure" or "completely protected."
+
+11. DATA SUBJECT RIGHTS
+Include rights available under applicable Kenyan data protection law, including:
+- Right to be informed
+- Right to access personal data
+- Right to correction/rectification
+- Right to object to processing
+- Right to deletion/erasure where applicable
+- Right to restrict processing where applicable
+- Right to data portability where applicable
+- Right to withdraw consent where processing is based on consent.
+
+Explain how visitors can contact Visit Malindi to exercise these rights.
+
+12. CHILDREN
+State that Visit Malindi does not knowingly seek unnecessary personal information from children.
+Where services involve children, information should be provided by a parent, guardian or authorised adult where appropriate.
+
+13. INTERNATIONAL / THIRD-COUNTRY PROCESSING
+If third-party platforms or service providers used by Visit Malindi may process information outside Kenya, explain this accurately without claiming specific countries unless verified.
+Explain that applicable safeguards will be considered as required by Kenyan law.
+
+14. DATA BREACHES
+Include a clear section explaining that Visit Malindi takes reasonable steps to protect information and will handle personal-data incidents in accordance with applicable legal requirements.
+
+15. COMPLAINTS
+Explain how visitors can raise privacy concerns with Visit Malindi first.
+Also identify the Office of the Data Protection Commissioner (ODPC) as the relevant Kenyan supervisory authority where applicable.
+
+16. CHANGES TO THIS POLICY
+Explain that the Privacy Policy may be updated when services, technology or legal requirements change.
+Display a clear "Last updated" date.
+
+WRITING STYLE:
+- Professional but easy for an ordinary tourist to understand.
+- Use clear headings and short paragraphs.
+- Avoid excessive legal jargon.
+- Do not copy another company's wording.
+- Make the policy specific to Visit Malindi's actual destination-guide and concierge model.
+- Do not make claims about data collection, payments, cookies, analytics, bookings, registrations, databases or third-party services unless they are actually implemented.
+- Where something cannot be verified from the existing code, inspect the project before writing the claim.
+- Make the policy suitable for visitors from Kenya and international visitors.
+
+LEGAL ACCURACY:
+Align the policy with Kenya's Data Protection Act, 2019 and applicable regulations/guidance from the Office of the Data Protection Commissioner.
+Do not present the policy as legal advice.
+Do not invent an ODPC registration number, physical address, Data Protection Officer, company registration details or legal entity name if these are not already present in the project.
+
+IMPORTANT:
+Keep the existing Visit Malindi design, header, footer, navigation, branding and responsive layout.
+Only improve the Privacy Policy page and any necessary footer link.
+Do not redesign unrelated pages.
+
+Before finishing:
+- Verify the Privacy Policy route works.
+- Verify the footer Privacy Policy link works.
+- Verify the page is responsive.
+- Verify no unsupported privacy claims were introduced.
+- Run the normal build and confirm it passes.

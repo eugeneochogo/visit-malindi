@@ -303,6 +303,107 @@ function LegalPage({ title, children }) {
   return <main className="legal-page page-width"><span className="eyebrow">Visit Malindi</span><h1>{title}</h1><p className="legal-note">This page is a starting point and should be reviewed before final production launch.</p><div className="legal-copy">{children}</div></main>;
 }
 
+function PrivacyPolicyPage() {
+  return (
+    <main className="legal-page page-width">
+      <span className="eyebrow">Visit Malindi</span>
+      <h1>Privacy Policy</h1>
+      <p className="legal-note">Last updated: 22 August 2026</p>
+      <div className="legal-copy">
+        <p>This Privacy Policy explains how Visit Malindi handles personal information when you use visitmalindi.co.ke or contact us about your trip.</p>
+
+        <h2>1. Who we are</h2>
+        <p>Visit Malindi is a destination discovery and local concierge service for Malindi, Watamu and the Kenyan Coast. We help visitors discover and enquire about accommodation, restaurants, nightlife, excursions, activities, itineraries and transport.</p>
+        <p>We are not necessarily the direct provider of every accommodation, restaurant, activity or transport service described on this website. We may introduce you to or coordinate with independent providers when you ask us to help with a request.</p>
+
+        <h2>2. Information we may collect</h2>
+        <p>We only seek information that is reasonably necessary to respond to a request or provide the concierge service. Depending on what you choose to share, this may include:</p>
+        <ul>
+          <li>Your name and phone or WhatsApp number</li>
+          <li>Your email address</li>
+          <li>Travel dates and number of travellers</li>
+          <li>Accommodation preferences</li>
+          <li>Transport requirements</li>
+          <li>Excursion or activity interests</li>
+          <li>Restaurant or nightlife enquiries</li>
+          <li>Itinerary preferences</li>
+          <li>Messages and other information you voluntarily provide</li>
+        </ul>
+        <p>When applicable, technical information such as your IP address, browser or device information and website usage data may also be processed by the systems used to deliver and protect the website. The website does not currently require registration or account creation.</p>
+
+        <h2>3. How we use information</h2>
+        <p>We may use information you provide to:</p>
+        <ul>
+          <li>Respond to your questions and enquiries</li>
+          <li>Arrange accommodation enquiries</li>
+          <li>Assist with restaurant and nightlife requests</li>
+          <li>Arrange transport enquiries</li>
+          <li>Assist with excursions and activities</li>
+          <li>Build or customise itineraries</li>
+          <li>Communicate with you about a requested service</li>
+          <li>Connect you with relevant accommodation, restaurant, activity, transport or other service partners where needed to fulfil your request</li>
+          <li>Improve the website and visitor experience</li>
+          <li>Maintain website security</li>
+          <li>Meet applicable legal obligations</li>
+        </ul>
+
+        <h2>4. WhatsApp concierge</h2>
+        <p>You may voluntarily contact Visit Malindi through WhatsApp using the links on this website. Information you choose to share there is used to respond to your enquiry and coordinate the services you have requested.</p>
+        <p>WhatsApp is operated by an independent third party, not by Visit Malindi. WhatsApp has its own privacy policy, terms and security practices, which apply to your use of that service.</p>
+
+        <h2>5. Third-party service providers</h2>
+        <p>If you ask us to arrange accommodation, transport, dining, nightlife or activities, we may need to share relevant information with the provider concerned so that they can respond to or fulfil your request.</p>
+        <p>We aim to share only information reasonably necessary for the requested service. Independent providers have their own privacy practices and Visit Malindi is not responsible for how those providers independently handle information after receiving it.</p>
+
+        <h2>6. Accommodation enquiries</h2>
+        <p>Visit Malindi may promote selected accommodation properties, manage enquiries for selected properties or connect visitors with accommodation providers. This does not mean that Visit Malindi owns every property listed on the website.</p>
+
+        <h2>7. Bookings and payments</h2>
+        <p>This website does not currently process automated online bookings or payments. Where an enquiry is handled manually, availability, pricing and final arrangements are confirmed separately with the relevant parties.</p>
+        <p>We do not ask this website to store card or payment information.</p>
+
+        <h2>8. Cookies and analytics</h2>
+        <p>The website does not currently use Google Analytics, advertising pixels, marketing cookies or a visitor account system. It does not intentionally use cookies to build an advertising profile. Your browser or hosting and security services may process basic technical request information needed to deliver and protect a website, subject to the practices of those services.</p>
+
+        <h2>9. Data retention</h2>
+        <p>Personal information is retained only for as long as reasonably necessary for the purpose for which it was collected, legitimate business purposes, dispute resolution, security and applicable legal obligations. We do not claim a fixed retention period where one has not been established.</p>
+
+        <h2>10. Data security</h2>
+        <p>Visit Malindi takes reasonable technical and organisational steps to protect personal information against unauthorised access, loss, misuse or disclosure. No method of transmission or storage can be guaranteed to be completely secure.</p>
+
+        <h2>11. Your data protection rights</h2>
+        <p>Subject to applicable Kenyan data protection law, including the Data Protection Act, 2019, you may have the right to:</p>
+        <ul>
+          <li>Be informed about how your personal data is used</li>
+          <li>Request access to personal data we hold about you</li>
+          <li>Request correction or rectification of inaccurate information</li>
+          <li>Object to processing in appropriate circumstances</li>
+          <li>Request deletion or erasure where applicable</li>
+          <li>Request restriction of processing where applicable</li>
+          <li>Request data portability where applicable</li>
+          <li>Withdraw consent where processing is based on consent</li>
+        </ul>
+        <p>To exercise a right or ask a privacy question, contact Visit Malindi at <a href="mailto:travel@visitmalindi.co.ke">travel@visitmalindi.co.ke</a> or through the Visit Malindi WhatsApp concierge. We may need to verify your request and will respond in line with applicable requirements.</p>
+
+        <h2>12. Children</h2>
+        <p>Visit Malindi does not knowingly seek unnecessary personal information from children. Where a service involves children, information should be provided by a parent, guardian or other authorised adult where appropriate.</p>
+
+        <h2>13. International or third-country processing</h2>
+        <p>Some third-party platforms or service providers used to operate communications, hosting or website services may process information outside Kenya. Where this occurs, we will consider and apply safeguards required by applicable Kenyan law. We do not claim that all processing takes place in one particular country.</p>
+
+        <h2>14. Data breaches</h2>
+        <p>Visit Malindi takes reasonable steps to protect personal information. If we become aware of a personal-data incident, we will assess and handle it, including any required notifications or other action, in accordance with applicable legal requirements.</p>
+
+        <h2>15. Complaints</h2>
+        <p>If you have a privacy concern, please contact Visit Malindi first so we can understand and address it. Where applicable, you may also raise a concern with Kenya’s Office of the Data Protection Commissioner (ODPC), the relevant supervisory authority.</p>
+
+        <h2>16. Changes to this policy</h2>
+        <p>We may update this Privacy Policy when our services, technology or legal requirements change. The “Last updated” date at the top of this page shows when the current version was published.</p>
+      </div>
+    </main>
+  );
+}
+
 function TrustNote() {
   return <div className="trust-note page-width"><Icon name="compass" size={19} /><p>Information may change — please confirm availability, pricing and schedules with Visit Malindi before making arrangements.</p></div>;
 }
@@ -359,7 +460,7 @@ function App() {
   else if (pathname === "/malindi") content = <DestinationPage destination={destinations.malindi} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} />;
   else if (pathname === "/watamu") content = <DestinationPage destination={destinations.watamu} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} />;
   else if (pathname === "/whats-on" || pathname === "/malindi-events") content = <EventsPage />;
-  else if (pathname === "/privacy") content = <LegalPage title="Privacy Policy"><p>Visit Malindi respects your privacy. This starter policy explains the basics of how this website is intended to work and should be reviewed before launch.</p><h2>Information you share</h2><p>When you choose to contact Visit Malindi through WhatsApp or email, the information you choose to include is sent to that service so we can respond to your enquiry.</p><h2>Website usage</h2><p>This V1 website is a static discovery experience. Any future analytics or contact systems should be added with clear notice and appropriate consent.</p></LegalPage>;
+  else if (pathname === "/privacy") content = <PrivacyPolicyPage />;
   else if (pathname === "/terms") content = <LegalPage title="Terms of Use"><p>Visit Malindi is a discovery and enquiry platform, not a booking or payment platform. Information on the website is intended to help you plan and should be confirmed before you make arrangements.</p><h2>Accuracy</h2><p>We aim to keep information useful and transparent. Availability, pricing, schedules and event details can change.</p><h2>External services</h2><p>WhatsApp, email and any linked third-party services have their own terms and policies.</p></LegalPage>;
   else if (pathname === "/disclaimer") content = <LegalPage title="Disclaimer"><p>Visit Malindi provides destination guidance and concierge introductions. We do not currently process bookings, payments or availability through this website.</p><p>Always confirm details directly through the Visit Malindi concierge before making travel or financial decisions.</p></LegalPage>;
   else if (catalogueByRoute[pathname]) content = <ListingPage key={pathname} config={catalogueByRoute[pathname]} />;
