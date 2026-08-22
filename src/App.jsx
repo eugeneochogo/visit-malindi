@@ -404,6 +404,68 @@ function PrivacyPolicyPage() {
   );
 }
 
+function TermsOfUsePage() {
+  return (
+    <main className="legal-page page-width">
+      <span className="eyebrow">Visit Malindi</span>
+      <h1>Terms of Use</h1>
+      <p className="legal-note">Last updated: 22 August 2026</p>
+      <div className="legal-copy">
+        <p>These Terms of Use explain the rules for using visitmalindi.co.ke. By using this website, you agree to use it responsibly and to these terms.</p>
+
+        <h2>1. About Visit Malindi</h2>
+        <p>Visit Malindi is a destination guide and local concierge service for Malindi, Watamu and the Kenyan Coast. We help visitors discover and enquire about accommodation, restaurants, nightlife, excursions, activities, itineraries and transport.</p>
+        <p>Visit Malindi is not the owner, operator or direct provider of every business, property, activity or transport service listed or discussed on this website. Some listings may be independent providers or selected properties for which we manage or facilitate enquiries.</p>
+
+        <h2>2. Using the website</h2>
+        <p>You may use this website for lawful personal travel research and planning. Please provide accurate information when making an enquiry and do not use the website to mislead, harass, impersonate another person, interfere with its operation or attempt to gain unauthorised access to any system.</p>
+        <p>You are responsible for ensuring that your use of the website and any arrangements you make comply with applicable laws.</p>
+
+        <h2>3. Enquiries and arrangements</h2>
+        <p>You may contact Visit Malindi about accommodation, restaurants, nightlife, excursions, activities, itineraries and transport. An enquiry, WhatsApp message, email or other request is not a confirmed booking or guaranteed arrangement.</p>
+        <p>A request becomes an arrangement only when Visit Malindi or the relevant provider separately confirms the details. The website does not currently process automated online bookings or payments.</p>
+
+        <h2>4. Independent providers</h2>
+        <p>Accommodation properties, restaurants, nightlife venues, excursion and activity providers, transport providers and other businesses control their own services. They are responsible for their own prices, availability, opening hours, schedules, booking terms, cancellations, rules, standards and delivery.</p>
+        <p>Where appropriate, Visit Malindi may pass relevant enquiry information to a provider or help coordinate communication. You should review and confirm the provider’s terms before making arrangements.</p>
+
+        <h2>5. Information may change</h2>
+        <p>Prices, availability, opening hours, schedules, venue details, listings and other destination information can change without notice. Website information is provided as a planning starting point and should be confirmed with Visit Malindi or the relevant provider before you rely on it.</p>
+
+        <h2>6. Visitor responsibilities</h2>
+        <p>You are responsible for checking that you have the passports, visas, permits, vaccinations, insurance, licences and other travel documents or requirements relevant to your journey. You are also responsible for sharing accurate dates, group details, preferences and accessibility or other practical information needed for a requested service.</p>
+        <p>Please follow the safety instructions, house rules, venue rules and provider instructions that apply to any arrangement you choose to make.</p>
+
+        <h2>7. Intellectual property</h2>
+        <p>Unless stated otherwise, the Visit Malindi name, branding, website design, text and original materials on this website belong to Visit Malindi or are used with permission. You may view and use them for personal, non-commercial travel planning. You must not copy, republish, sell, modify, distribute or use them commercially without permission.</p>
+        <p>Third-party names, logos, photographs and links belong to their respective owners.</p>
+
+        <h2>8. External links</h2>
+        <p>This website may link to WhatsApp, maps, provider websites, social profiles and other external services. These links are provided for convenience. External services operate independently, may change or become unavailable, and have their own terms and privacy practices. Visit Malindi does not control or endorse every external service.</p>
+
+        <h2>9. Website availability and liability</h2>
+        <p>We aim to keep the website useful and available, but we do not promise that it will always be uninterrupted, error-free, complete or current. We may update, suspend or remove content or features when necessary.</p>
+        <p>To the extent permitted by applicable law, Visit Malindi is not responsible for losses arising from reliance on changing destination information, provider services, external websites, travel interruptions or arrangements made with independent providers. Nothing in these terms excludes or limits liability that cannot lawfully be excluded or limited.</p>
+
+        <h2>10. Events outside our control</h2>
+        <p>Visit Malindi is not responsible for delay, interruption or failure caused by events outside reasonable control, including severe weather, natural disasters, illness outbreaks, government action, transport disruption, strikes, civil unrest, communication failures or failures of third-party services.</p>
+
+        <h2>11. Privacy</h2>
+        <p>Our <a href="/privacy">Privacy Policy</a> explains how Visit Malindi handles personal information shared through the website and concierge channels.</p>
+
+        <h2>12. Kenyan law</h2>
+        <p>These Terms of Use are governed by the laws of Kenya. Any dispute relating to these terms or the use of this website will be subject to the applicable courts and laws of Kenya.</p>
+
+        <h2>13. Changes to these terms</h2>
+        <p>We may update these Terms of Use when our services, website or legal requirements change. The “Last updated” date at the top of this page shows when the current version was published. Your continued use of the website after an update means that you accept the revised terms.</p>
+
+        <h2>14. Contact</h2>
+        <p>For questions about these Terms of Use or a Visit Malindi enquiry, contact us at <a href="mailto:travel@visitmalindi.co.ke">travel@visitmalindi.co.ke</a> or through the Visit Malindi WhatsApp concierge. Website: visitmalindi.co.ke.</p>
+      </div>
+    </main>
+  );
+}
+
 function TrustNote() {
   return <div className="trust-note page-width"><Icon name="compass" size={19} /><p>Information may change — please confirm availability, pricing and schedules with Visit Malindi before making arrangements.</p></div>;
 }
@@ -461,7 +523,7 @@ function App() {
   else if (pathname === "/watamu") content = <DestinationPage destination={destinations.watamu} WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} />;
   else if (pathname === "/whats-on" || pathname === "/malindi-events") content = <EventsPage />;
   else if (pathname === "/privacy") content = <PrivacyPolicyPage />;
-  else if (pathname === "/terms") content = <LegalPage title="Terms of Use"><p>Visit Malindi is a discovery and enquiry platform, not a booking or payment platform. Information on the website is intended to help you plan and should be confirmed before you make arrangements.</p><h2>Accuracy</h2><p>We aim to keep information useful and transparent. Availability, pricing, schedules and event details can change.</p><h2>External services</h2><p>WhatsApp, email and any linked third-party services have their own terms and policies.</p></LegalPage>;
+  else if (pathname === "/terms") content = <TermsOfUsePage />;
   else if (pathname === "/disclaimer") content = <LegalPage title="Disclaimer"><p>Visit Malindi provides destination guidance and concierge introductions. We do not currently process bookings, payments or availability through this website.</p><p>Always confirm details directly through the Visit Malindi concierge before making travel or financial decisions.</p></LegalPage>;
   else if (catalogueByRoute[pathname]) content = <ListingPage key={pathname} config={catalogueByRoute[pathname]} />;
   else if (pathname.startsWith("/experience/")) content = <ReusableDetailPage type="experience" item={experiences.find((item) => item.slug === slugFromPath(pathname))} experiences={experiences} relatedItems={experiences} relatedType="experience" WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} ListingCard={ListingCard} NotFound={NotFound} />;
