@@ -466,6 +466,40 @@ function TermsOfUsePage() {
   );
 }
 
+function DisclaimerPage() {
+  return (
+    <main className="legal-page page-width">
+      <span className="eyebrow">Visit Malindi</span>
+      <h1>Disclaimer</h1>
+      <p className="legal-note">Last updated: 22 August 2026</p>
+      <div className="legal-copy">
+        <p>Visit Malindi provides destination information and local concierge introductions to help visitors plan trips to Malindi, Watamu and the Kenyan Coast. This information is general travel guidance, not a guarantee or a substitute for checking details for your own journey.</p>
+
+        <h2>Information can change</h2>
+        <p>Prices, availability, opening hours, schedules, services and listing details can change. Please confirm current information with Visit Malindi and, where relevant, the provider before making arrangements.</p>
+
+        <h2>Independent providers</h2>
+        <p>Accommodation, restaurants, nightlife venues, excursion operators and transport providers may be independent third parties. Visit Malindi does not guarantee their availability, quality, safety, pricing or performance. Any enquiry is subject to separate confirmation by Visit Malindi or the relevant provider.</p>
+
+        <h2>Travel circumstances</h2>
+        <p>Transport, excursions and other plans may be affected by weather, traffic, delays, changes in provider services and other circumstances outside Visit Malindi’s control. Recommendations and listings are starting points for planning, not guarantees of a particular experience or outcome.</p>
+
+        <h2>Your responsibilities</h2>
+        <p>Visitors are responsible for checking their travel documents, visas, permits, insurance, health or personal requirements and any rules set by a provider. Please follow the safety guidance and terms that apply to the service you choose.</p>
+
+        <h2>External websites</h2>
+        <p>Links to WhatsApp, maps, provider websites, social profiles and other external services are controlled by third parties. They have their own content, terms and privacy practices, which Visit Malindi does not control.</p>
+
+        <h2>Privacy and Terms of Use</h2>
+        <p>Please read our <a href="/privacy" onClick={(event) => { event.preventDefault(); navigate("/privacy"); }}>Privacy Policy</a> and <a href="/terms" onClick={(event) => { event.preventDefault(); navigate("/terms"); }}>Terms of Use</a> for more information about using this website and sharing information with Visit Malindi.</p>
+
+        <h2>Legal responsibility</h2>
+        <p>To the extent permitted by applicable law, Visit Malindi is not responsible for losses arising from reliance on changing destination information or independent third-party services. Nothing in this disclaimer excludes or limits liability that cannot legally be excluded or limited under Kenyan law.</p>
+      </div>
+    </main>
+  );
+}
+
 function TrustNote() {
   return <div className="trust-note page-width"><Icon name="compass" size={19} /><p>Information may change — please confirm availability, pricing and schedules with Visit Malindi before making arrangements.</p></div>;
 }
@@ -524,7 +558,7 @@ function App() {
   else if (pathname === "/whats-on" || pathname === "/malindi-events") content = <EventsPage />;
   else if (pathname === "/privacy") content = <PrivacyPolicyPage />;
   else if (pathname === "/terms") content = <TermsOfUsePage />;
-  else if (pathname === "/disclaimer") content = <LegalPage title="Disclaimer"><p>Visit Malindi provides destination guidance and concierge introductions. We do not currently process bookings, payments or availability through this website.</p><p>Always confirm details directly through the Visit Malindi concierge before making travel or financial decisions.</p></LegalPage>;
+  else if (pathname === "/disclaimer") content = <DisclaimerPage />;
   else if (catalogueByRoute[pathname]) content = <ListingPage key={pathname} config={catalogueByRoute[pathname]} />;
   else if (pathname.startsWith("/experience/")) content = <ReusableDetailPage type="experience" item={experiences.find((item) => item.slug === slugFromPath(pathname))} experiences={experiences} relatedItems={experiences} relatedType="experience" WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} ListingCard={ListingCard} NotFound={NotFound} />;
   else if (pathname.startsWith("/excursion/")) content = <ReusableDetailPage type="excursion" item={excursions.find((item) => item.slug === slugFromPath(pathname))} experiences={excursions} relatedItems={excursions} relatedType="excursion" WhatsAppButton={WhatsAppButton} SectionHeading={SectionHeading} ListingCard={ListingCard} NotFound={NotFound} />;
