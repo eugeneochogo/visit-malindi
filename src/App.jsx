@@ -546,6 +546,61 @@ function App() {
     if (!ogImage) { ogImage = document.createElement("meta"); ogImage.setAttribute("property", "og:image"); document.head.appendChild(ogImage); }
     ogImage.content = searchItem?.image || photos.hero;
   }, [pathname]);
+  useEffect(() => {
+    const root = document.documentElement;
+    const revealSelector = [
+      "main > section",
+      ".hero-content",
+      ".intro-strip",
+      ".section-heading",
+      ".explore-card",
+      ".listing-card",
+      ".split-story",
+      ".nightlife-banner",
+      ".planning-band",
+      ".page-hero",
+      ".concierge-panel",
+      ".transfer-landing-guide",
+      ".detail-hero",
+      ".detail-body > *",
+      ".editorial-image",
+      ".editorial-copy",
+      ".values-grid > div",
+      ".contact-card",
+      ".legal-copy",
+      ".destination-hero",
+      ".destination-intro",
+      ".destination-guide-section",
+      ".destination-practical",
+      ".destination-itineraries",
+      ".destination-cta",
+      ".empty-events",
+    ].join(", ");
+    const targets = Array.from(document.querySelectorAll(revealSelector));
+    root.classList.add("motion-ready");
+    targets.forEach((target) => target.classList.add("reveal"));
+    if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      targets.forEach((target) => target.classList.add("is-visible"));
+      return () => {
+        root.classList.remove("motion-ready");
+        targets.forEach((target) => target.classList.remove("reveal", "is-visible"));
+      };
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -42px 0px" });
+    targets.forEach((target) => observer.observe(target));
+    return () => {
+      observer.disconnect();
+      root.classList.remove("motion-ready");
+      targets.forEach((target) => target.classList.remove("reveal", "is-visible"));
+    };
+  }, [pathname]);
 
   let content;
   if (pathname === "/") content = <HomePage />;
