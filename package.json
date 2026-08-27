@@ -6,16 +6,12 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 5000",
     "build": "node scripts/generate-sitemap.mjs && vite build",
-    "preview": "vite preview --host 0.0.0.0 --port 5000",
-    "test:mobile": "playwright test tests/mobile-regressions.spec.js"
+    "preview": "vite preview --host 0.0.0.0 --port 5000"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "vite": "^6.0.5"
-  },
-  "devDependencies": {
-    "@playwright/test": "^1.62.1"
   }
 }
