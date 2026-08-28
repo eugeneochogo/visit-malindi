@@ -471,13 +471,15 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
 
 @media (max-width: 620px) {
   .page-width, .header-inner { width: calc(100% - 36px); }
+  .header-inner { min-width: 0; gap: 12px; }
+  .header-actions { min-width: 0; gap: 6px; margin-left: 0; }
   .section { padding-top: 80px; padding-bottom: 80px; }
   .section-tint { width: 100%; padding-left: 18px; padding-right: 18px; }
   .hero { min-height: 650px; }
   .hero-content { padding-top: 105px; }
   .hero h1 { font-size: clamp(53px, 15vw, 75px); }
   .hero-content p { font-size: 14px; }
-  .hero-actions { align-items: stretch; flex-direction: column; width: max-content; }
+  .hero-actions { align-items: stretch; flex-direction: column; width: 100%; max-width: 100%; }
   .hero-actions .button { width: 100%; }
   .hero-note { display: none; }
   .intro-strip { grid-template-columns: 47px 1fr; gap: 16px; padding: 28px 0; }
@@ -508,9 +510,10 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
   .floating-whatsapp span { display: none; }
   .icon-button { width: 44px; height: 44px; }
   .page-hero, .editorial-hero, .planner-intro, .contact-page, .legal-page { padding-top: 72px; }
-  .page-hero h1, .editorial-hero h1, .contact-hero h1, .planner-intro h1, .legal-page h1, .not-found h1 { font-size: 53px; }
+  .page-hero h1, .editorial-hero h1, .contact-hero h1, .planner-intro h1, .legal-page h1, .not-found h1 { font-size: clamp(40px, 13vw, 53px); overflow-wrap: anywhere; }
   .page-hero > p, .editorial-hero > p, .contact-hero p, .planner-intro p { font-size: 15px; }
-  .page-hero-actions { align-items: stretch; flex-direction: column; width: max-content; }
+  .page-hero-actions { align-items: stretch; flex-direction: column; width: 100%; max-width: 100%; }
+  .page-hero-actions .button { width: 100%; }
   .concierge-panel { grid-template-columns: 1fr; gap: 25px; padding: 28px 22px; }
   .concierge-panel ul { grid-template-columns: 1fr; padding-top: 0; }
   .transfer-landing-guide { grid-template-columns: 1fr; gap: 34px; padding: 38px 0; }
@@ -530,7 +533,8 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
   .detail-hero-copy h1 { font-size: 47px; }
   .detail-body { padding-top: 65px; padding-bottom: 55px; }
   .highlight-list { grid-template-columns: 1fr; gap: 0; }
-  .detail-facts { grid-template-columns: repeat(2, 1fr); margin-bottom: 42px; }
+  .detail-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 42px; }
+  .detail-facts > div { min-width: 0; overflow-wrap: anywhere; }
   .detail-facts > div:nth-child(2) { border-right: 0; }
   .detail-facts > div:nth-child(3) { border-top: 1px solid var(--line); }
   .detail-information, .detail-gallery, .detail-location-panel { margin-top: 42px; }
@@ -539,8 +543,8 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
   .detail-location-panel { display: block; padding: 24px; }
   .detail-location-panel .text-link { margin-top: 18px; }
   .related-section { padding-top: 20px; }
-  .choice-grid { grid-template-columns: repeat(2, 1fr); }
-  .choice-card { min-height: 105px; padding: 15px; }
+  .choice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .choice-card { min-width: 0; min-height: 105px; padding: 15px; overflow-wrap: anywhere; }
   .planner-progress { margin-bottom: 45px; }
   .planner-question { padding: 35px 0 48px; }
   .planner-question h2 { font-size: 29px; }
@@ -559,7 +563,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
   .destination-page { padding-top: 25px; padding-bottom: 70px; }
   .destination-hero-image { min-height: 310px; max-height: none; }
   .destination-hero-copy { padding: 42px 26px; }
-  .destination-hero-copy h1 { font-size: 52px; }
+  .destination-hero-copy h1 { font-size: clamp(40px, 12vw, 52px); overflow-wrap: anywhere; }
   .destination-hero-lead { font-size: 15px; }
   .destination-hero-actions { align-items: stretch; flex-direction: column; width: 100%; }
   .destination-hero-actions .button { width: 100%; }
@@ -581,6 +585,38 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
   .destination-itineraries { gap: 30px; padding: 55px 22px; }
   .destination-cta { display: block; margin-top: 0; padding: 58px 22px; }
   .destination-cta .button { width: 100%; margin-top: 28px; }
+
+  .button {
+    max-width: 100%;
+    height: auto;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.25;
+  }
+  .listing-card, .explore-card, .contact-card, .aside-card, .empty-events,
+  .detail-main, .detail-aside, .destination-link, .destination-link > span,
+  .search-results > a > span:nth-child(2), .search-result-row > span:nth-child(2) {
+    min-width: 0;
+  }
+  .listing-card h3, .listing-meta, .destination-link > span,
+  .detail-hero-copy h1, .detail-location, .legal-copy, .contact-email,
+  .footer-links a, .footer-links span {
+    overflow-wrap: anywhere;
+  }
+  .detail-hero-copy h1 { font-size: clamp(36px, 11vw, 47px); }
+  .search-input-wrap input, .full-search-input input { min-width: 0; font-size: clamp(18px, 6vw, 22px); }
+  .search-results > a > span:nth-child(2), .search-result-row > span:nth-child(2) { overflow: hidden; }
+  .footer-links { min-width: 0; }
+  .footer-bottom div { min-width: 0; flex-wrap: wrap; gap: 8px 16px; }
+}
+
+@media (max-width: 360px) {
+  .site-header .brand-logo { width: 138px; }
+  .footer-top { grid-template-columns: 1fr; gap: 34px; }
+  .footer-contact { grid-column: 1; }
+  .footer-bottom { align-items: flex-start; flex-direction: column; gap: 12px; }
 }
 
 /* Premium coastal refinement */
