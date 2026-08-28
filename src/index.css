@@ -438,7 +438,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
 
 @media (max-width: 900px) {
   .header-inner { height: 74px; }
-  .main-nav { position: fixed; inset: 0; z-index: 25; display: none; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; padding: 25px 22px; background: var(--cream); }
+  .main-nav { position: fixed; inset: 0; z-index: 25; display: none; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: 25px 22px max(25px, env(safe-area-inset-bottom)); background: var(--cream); }
   .main-nav.is-open { display: flex; }
   .main-nav > a { padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 22px; letter-spacing: -.05em; }
   .mobile-nav-heading { display: flex; justify-content: space-between; align-items: center; padding-bottom: 15px; color: var(--muted); font: 700 10px var(--display); letter-spacing: .16em; text-transform: uppercase; }

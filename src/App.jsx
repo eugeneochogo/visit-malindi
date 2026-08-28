@@ -97,7 +97,7 @@ function Header({ onSearch }) {
         <a className="brand" href="/" onClick={(event) => { event.preventDefault(); go("/"); }}>
           <img className="brand-logo" src="/visit-malindi-logo.png" alt="Visit Malindi" />
         </a>
-        <nav className={`main-nav ${open ? "is-open" : ""}`} aria-label="Main navigation">
+        <nav id="mobile-navigation" className={`main-nav ${open ? "is-open" : ""}`} aria-label="Main navigation" onClick={(event) => { if (event.target === event.currentTarget) setOpen(false); }}>
           <div className="mobile-nav-heading"><span>Explore the coast</span><button className="icon-button" aria-label="Close menu" onClick={() => setOpen(false)}><Icon name="close" /></button></div>
           {navItems.map((item) => <a key={item.path} href={item.path} onClick={(event) => { event.preventDefault(); go(item.path); }}>{item.label}</a>)}
           <div className="mobile-nav-cta"><WhatsAppButton label="Talk to Visit Malindi" /></div>
@@ -105,7 +105,7 @@ function Header({ onSearch }) {
         <div className="header-actions">
           <button className="icon-button search-trigger" onClick={onSearch} aria-label="Search"><Icon name="search" /></button>
           <WhatsAppButton label="WhatsApp Concierge" className="header-cta" />
-          <button className="icon-button menu-trigger" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)}><Icon name={open ? "close" : "menu"} /></button>
+          <button className="icon-button menu-trigger" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}><Icon name={open ? "close" : "menu"} /></button>
         </div>
       </div>
     </header>
