@@ -97,7 +97,7 @@ function Header({ onSearch }) {
         <a className="brand" href="/" onClick={(event) => { event.preventDefault(); go("/"); }}>
           <img className="brand-logo" src="/visit-malindi-logo.png" alt="Visit Malindi" />
         </a>
-        <nav id="mobile-navigation" className={`main-nav ${open ? "is-open" : ""}`} aria-label="Main navigation" onClick={(event) => { if (event.target === event.currentTarget) setOpen(false); }}>
+        <nav className={`main-nav ${open ? "is-open" : ""}`} aria-label="Main navigation">
           <div className="mobile-nav-heading"><span>Explore the coast</span><button className="icon-button" aria-label="Close menu" onClick={() => setOpen(false)}><Icon name="close" /></button></div>
           {navItems.map((item) => <a key={item.path} href={item.path} onClick={(event) => { event.preventDefault(); go(item.path); }}>{item.label}</a>)}
           <div className="mobile-nav-cta"><WhatsAppButton label="Talk to Visit Malindi" /></div>
@@ -105,7 +105,7 @@ function Header({ onSearch }) {
         <div className="header-actions">
           <button className="icon-button search-trigger" onClick={onSearch} aria-label="Search"><Icon name="search" /></button>
           <WhatsAppButton label="WhatsApp Concierge" className="header-cta" />
-          <button className="icon-button menu-trigger" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}><Icon name={open ? "close" : "menu"} /></button>
+          <button className="icon-button menu-trigger" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)}><Icon name={open ? "close" : "menu"} /></button>
         </div>
       </div>
     </header>
@@ -545,61 +545,6 @@ function App() {
     let ogImage = document.querySelector('meta[property="og:image"]');
     if (!ogImage) { ogImage = document.createElement("meta"); ogImage.setAttribute("property", "og:image"); document.head.appendChild(ogImage); }
     ogImage.content = searchItem?.image || photos.hero;
-  }, [pathname]);
-  useEffect(() => {
-    const root = document.documentElement;
-    const revealSelector = [
-      "main > section",
-      ".hero-content",
-      ".intro-strip",
-      ".section-heading",
-      ".explore-card",
-      ".listing-card",
-      ".split-story",
-      ".nightlife-banner",
-      ".planning-band",
-      ".page-hero",
-      ".concierge-panel",
-      ".transfer-landing-guide",
-      ".detail-hero",
-      ".detail-body > *",
-      ".editorial-image",
-      ".editorial-copy",
-      ".values-grid > div",
-      ".contact-card",
-      ".legal-copy",
-      ".destination-hero",
-      ".destination-intro",
-      ".destination-guide-section",
-      ".destination-practical",
-      ".destination-itineraries",
-      ".destination-cta",
-      ".empty-events",
-    ].join(", ");
-    const targets = Array.from(document.querySelectorAll(revealSelector));
-    root.classList.add("motion-ready");
-    targets.forEach((target) => target.classList.add("reveal"));
-    if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      targets.forEach((target) => target.classList.add("is-visible"));
-      return () => {
-        root.classList.remove("motion-ready");
-        targets.forEach((target) => target.classList.remove("reveal", "is-visible"));
-      };
-    }
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -42px 0px" });
-    targets.forEach((target) => observer.observe(target));
-    return () => {
-      observer.disconnect();
-      root.classList.remove("motion-ready");
-      targets.forEach((target) => target.classList.remove("reveal", "is-visible"));
-    };
   }, [pathname]);
 
   let content;

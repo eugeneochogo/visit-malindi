@@ -1,7 +1,6 @@
 modules = ["nodejs-22"]
 [nix]
 channel = "stable-25_05"
-packages = ["glib", "nss", "nspr", "atk", "at-spi2-atk", "cups", "dbus", "expat", "fontconfig", "freetype", "gdk-pixbuf", "gtk3", "libdrm", "mesa", "pango", "cairo", "libxkbcommon", "xorg.libX11", "xorg.libXcomposite", "xorg.libXdamage", "xorg.libXext", "xorg.libXfixes", "xorg.libXrandr", "xorg.libxcb", "xorg.libXi", "xorg.libXrender", "xorg.libXtst", "xorg.libXScrnSaver", "alsa-lib", "libgbm"]
 
 [agent]
 expertMode = true
@@ -33,12 +32,3 @@ outputType = "webview"
 [[ports]]
 localPort = 5000
 externalPort = 80
-
-[postMerge]
-path = "scripts/post-merge.sh"
-timeoutMs = 180000
-
-[deployment]
-deploymentTarget = "static"
-build = ["npm", "run", "build"]
-publicDir = "dist"
